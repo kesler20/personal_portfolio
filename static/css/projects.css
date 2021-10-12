@@ -1,0 +1,182 @@
+
+.showcase
+.bg-img {
+   height: 90vh;
+}
+
+.showcase .btn {
+   color: #000;
+   background-color: white;
+   border-color: black;
+}
+
+
+.presentation.body {
+   height: 100vh;
+}
+.presentation.body .card {
+   height: 560px;
+   box-shadow: black;
+}
+
+.first-card .card{
+   margin-left: 2200px;
+}
+
+.presentation.body {
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: normal;
+   padding-bottom: 200px;
+}
+
+.projects-title {
+   margin-right: 500px;
+}
+
+.presentation.body .text-center a {
+   color: rgba(0,0,0,0.4);
+}
+
+.presentation.body .container{
+   overflow: visible;
+}
+
+.presentation.body .card {
+   overflow: hidden;
+}
+
+.presentation.body .card .md a {
+   color: rgba(0,0,0,0.4);
+}
+
+.img {
+   width: 400px;
+}
+
+.bionics {
+   width: 500px;
+}
+
+
+/*------------------------------*/
+
+
+.languages {
+   position: relative;
+   height: 100vh;   
+}
+
+.languages .card {
+   position: absolute;
+}
+
+.languages .card:nth-child(1){
+   left: 45%;
+   top: 20%;
+   transform: translateX(-50%);
+   transform: translateY(-50%);
+   transform: rotate(-45deg);
+}
+
+.languages .card:nth-child(2){
+   left: 50%;
+   top: 7%;
+   transform: translateX(-50%);
+   transform: translateY(-50%);
+   transform: rotate(-35deg);
+}
+
+.languages .card:nth-child(3){
+   left: 60%;
+   top: 10%;
+   transform: translateX(-50%);
+   transform: translateY(-50%);
+}
+
+.languages .card:nth-child(4){
+   left: 70%;
+   top: 7%;
+   transform: translateX(-50%);
+   transform: translateY(-50%);
+   transform: rotate(35deg);
+}
+
+.languages .card:nth-child(5){
+   left: 75%;
+   top: 20%;
+   transform: translateX(-50%);
+   transform: translateY(-50%);
+   transform: rotate(45deg);
+}
+
+.computer {
+   width: 25%;
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   transform: translateX(-50%);
+   transform: translateY(-50%);
+}
+
+.programming {
+   padding-left: 200px;
+}
+
+.programming .btn {
+   color: black;
+   border-color: black;
+}
+
+
+.introduction {
+   height: 100vh;
+}
+
+.testimonials.first-card .card{
+   margin-left: 550px;
+}
+/*------------------------------*/
+
+
+.text-to-view {
+   font-family: Arial, Helvetica, sans-serif;
+   background-color: #fff;
+   color: #333;
+   border-radius: 10px;
+   box-shadow: 0 30px 30px rgba(0, 0, 0, 0.7);
+   padding: 20px;
+   margin: 10px;
+}
+
+.text-to-view .md a,
+.text-to-view .xl a{
+   color: rgba(0,0,0,0.4);
+}
+
+
+.carousel-inner {
+   height: 90vh;
+}
+
+.carousel-img {
+   background-color: black;
+   width: 100%;
+}
+
+
+/*------------------------------*/
+
+
+.about-me {
+   color: black;
+}
+
+.about-me a {
+   color: rgba(0,0,0,0.4);
+}
+
+.about-me img {
+   box-shadow: 0 30px 30px rgba(0, 0, 0, 0.7);
+   width: 100%;
+   border-radius: 20%;
+}

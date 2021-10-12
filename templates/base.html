@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/utilities.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/projects.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/workflow.css') }}" />
+    <!-- Font Awesome link tag copied from cdjs.com -->
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" 
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer" />
+    <!-- -------------------------------------------------------->
+    <title>{%block title %}{% endblock %}</title>
+  </head> 
+  <body>
+    <div id="preloader" style="
+    background-image: url('../static/img/bold-preloader.gif'); 
+    background-repeat: no-repeat; 
+    background-position-x: 50%; 
+    background-position-y: center; 
+    background-size: 50%;
+    ">
+    </div>
+      <!--- Navbar-->
+    <nav>
+      <div class="hamburger">
+        <div class="top line"></div>
+        <div class="midll line"></div>
+        <div class="bottm line"></div>
+      </div>
+      <ul class="nav-links">
+        <li><a href='../index'>Home</a></li>
+        <li><a href='../projects'>Projects</a></li>
+        <li><a href='../contact'>Contact Me</a></li>
+      </ul>
+    </nav>
+    {% block content %}{% endblock %}
+    <!-- Footer-->
+    <footer class="footer bg-primary py-5">
+      <div class="container grid grid-3">
+        <div>
+          <p>Created by: Kesler Isoko</p>
+          <p>Copyright &copy; 2021</p>
+        </div>
+        <div>
+        </div>
+
+        <div class="social">
+          <a href="#"><i class="fab fa-github fa-2x"></i></a>
+          <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+          <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+          <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+        </div>
+      </div>
+    </footer>
+    <!-- scripts -->
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/particles.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/lib/particles.min.js') }}"></script>
+  </body>
+</html>

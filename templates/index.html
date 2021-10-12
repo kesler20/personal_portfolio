@@ -1,0 +1,203 @@
+{% extends 'base.html' %}
+{% block title %}Home Page{% endblock %}
+{% block content %}
+<section class="showcase head bg-primary py-3">
+    <div class="bg-img" style="
+        background-image: url('../static/img/Round-Sphere-Moving.gif'); 
+        background-repeat: no-repeat; 
+        background-position-x: 70%; 
+        background-position-y: center; 
+        background-size: 70%;
+        ">
+        <div class="container grid">
+            <div">
+                <h3 class="md">Hello My Name Is</h3> <!--remove text align center-->
+                <h1 class="xl">Kesler Isoko</h1>
+                <p>A Chemical Engineering student with a passion for building things</p>
+                <p>Welcome to my personal portfolio where you can learn more about who I am</p>
+                <p>And the work that I do</p>
+                <a href="{{ url_for('static', filename='img/charity.jpg') }}" class="btn btn-outline">My Cv</a>
+            </div>
+            <div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="presentation body bg-light py-3">
+    <div class="text-center projects-title xl">My Main<a> Projects.</a></div>
+    <div class="container flex">
+        <div class='first-card'>
+            <div class="card" hef='../biodigester/'>
+                <p>Designing a biodigester</p>
+                <p class="md">Hackathon <a>Biodigester</a></p>
+                <p>worked within an interdisciplinary team</p>
+                <img src="{{ url_for('static', filename='img/biodigester.jpg') }}" alt="biodigester pricture" srcset="">
+            </div>
+        </div>
+        <div>
+            <div class="card" hef='../machine_learning/'>
+                <p>Designing and coding my own algorithm</p>
+                <p class="md">Machine <a>Learning</a></p>
+                <p>programmed a reinforcement learning model for training a bionic arm</p>
+                <img class='bionics' src="{{ url_for('static', filename='img/bionics.jpg') }}" alt="random pic" srcset="">
+            </div>
+        </div>
+        <div>
+            <div class="card">
+                <p>Programmed a Process Safety Application</p>
+                <p class="md">Expert <a>System</a></p>
+                <p>conducted research for a summer internship</p>
+                <img class='img' src="{{ url_for('static', filename='img/favicon.svg') }}" alt="random pic" srcset="">
+            </div>
+        </div>
+        <div>
+            <div class="card">
+                <p>Making my own cryptocurrency</p>
+                <p class="md">Iso<a>Koin</a></p>
+                <p>made my own cryptocurrency running within its own blockchiain</p>
+                <img class='img' src="{{ url_for('static', filename='img/Logo.png') }}" alt="random pic" srcset="">
+            </div>
+        </div>
+        <div>
+            <div class="card">
+                <p>Designing an electric generator</p>
+                <p class="md">Piezoelectric <a>Generator</a></p>
+                <p>conducted testing on and modelled a piezoelectric generator</p>
+                <img src="{{ url_for('static', filename='img/stirling.gif') }}" alt="random pic" srcset="">
+            </div>
+        </div>
+        <div>
+            <div class="card">
+                <p>coding a quantitative trading bot</p>
+                <p class="md">Trading <a>Bot</a></p>
+                <p>coded a trading bot that places trades using quant strategies</p>
+                <img src="{{ url_for('static', filename='img/tradingbot.jpg') }}" alt="random pic" srcset="">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="showcase introduction bg-primary" style="
+    background-image: url('../static/img/black-background.gif'); 
+    background-repeat: no-repeat; 
+    background-position-x: 70%; 
+    background-position-y: center; 
+    background-size: 70%;
+    ">
+    <div class="container grid">
+        <div class="showcase-text">
+            <h1>Do you want to collaorate?</h1>
+            <p>If you want to work on new exciting projects and you are looking for someone with a technical background please fill in the form on the right. Nevertheless, if you are an employer you can go on the contac me section using the navbar or click on the botton below </p>
+            <a href="../contact" class="btn btn-outline">Hire Me</a>
+        </div>
+
+        <div class="showcase-form card">
+            <h2>Request Collaboration</h2>
+             <form>
+                <div class="form-control">
+                    <input type="text" name="name" placeholder="Name" required>
+                </div>
+                <div class="form-control">
+                    <input type="text" name="company" placeholder="Company Name (optional)">
+                </div>
+                <div class="form-control">
+                    <input type="email" name="email" placeholder="Email" required>
+                </div>
+                <input type="submit" value="Send Request" class="btn btn-outline">
+            </form>
+        </div>
+    </div>
+</section>
+
+<section class="languages">
+    <div class="programming">
+        <h2 class="md my-2">
+            Programming Languages
+        </h2>
+        <p>These are the programming languages that I have experience using with python being my faveourite.</p>
+        <p>Nevertheless, I retain my self to be programming agnostic as I understand the fundamentals of programming</p>
+        <a href="{{ url_for('static', filename='img/charity.jpg') }}" class="btn btn-outline">My GitHub</a>
+    </div>
+    <div class="container flex">
+        <div class="card">
+            <h4>JavaScript</h4>
+            <img src="{{ url_for('static', filename='img/node.png') }}" alt="">
+        </div>
+        <div class="card">
+            <h4>Python</h4>
+            <img src="{{ url_for('static', filename='img/python.png') }}" alt="">
+          </div>
+          <div class="card">
+            <h4>C</h4>
+            <img src="{{ url_for('static', filename='img/csharp.png') }}" alt="">
+          </div>
+          <div class="card">
+            <h4>C++</h4>
+            <img src="{{ url_for('static', filename='img/csharp.png') }}" alt="">
+          </div>
+          <div class="card">
+            <h4>Solidity</h4>
+            <img src="{{ url_for('static', filename='img/python.png') }}" alt="">
+          </div>
+    </div>
+    <img class='computer' src="{{ url_for('static', filename='img/computer.png') }}" alt="">
+</section>
+
+<div class="workflow-container" id='workflow'>
+    <div class="workflow">
+      <ul>
+        <li>
+          <div class="workflow-content">
+            <h3 class="date">June 2016</h3>
+            <h1>Moved To The Uk</h1>
+            <p>Request an account in order to create a node and access all the functionality provided by the ISK platform</p>
+          </div>
+        </li>
+        <li>
+          <div class="workflow-content">
+            <h3 class="date">September 2019</h3>
+            <h1>Completed College</h1>
+            <p>Completed over 10 subjects within 3 years and finished my A-Leves & Equivalent with Dist Dist* Dist* B which was over n UCAS points at the time</p>
+          </div>
+        </li>
+        <li>
+          <div class="workflow-content">
+            <h3 class="date">July 2020</h3>
+            <h1>Finished Year 1</h1>
+            <p>Completed Year 1 with a 71% average score, during this time I also started programming and completed various Hackathons</p>
+          </div>
+        </li>
+        <li>
+          <div class="workflow-content">
+            <h3 class="date">July 2021 - Current</h3>
+            <h1>Looking For Work</h1>
+            <p>After completing year 2 with an average of 67% alongside taking part in more projects and teaching myself over 6 programming languages</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <section class="showcase introduction bg-light">
+    <div class="container about-me grid">
+        <div class="showcase-text">
+            <h1 class='xl'>About <a>Me</a>.</h1>
+            <p>  I am 3rd year Meng Chemical Engineering student and a self-taught programmer. My interest is in optimisation and AI applied to large scale production systems. 
+                Hobbies:
+                <ul>
+                    <li>Debating</li>
+                    <li>Football</li>
+                    <li>Gym</li>
+                    <li>Philosophy</li>
+                </ul>
+            </p>
+        </div>
+        <div class="about-me-img">
+            <img src="{{ url_for('static', filename='img/my-pic.jpeg') }}" alt="image of myself" srcset="">
+        </div>
+    </div>
+</section>
+
+{% endblock %}
