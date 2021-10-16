@@ -180,3 +180,46 @@
    width: 100%;
    border-radius: 20%;
 }
+
+
+.presentation.projects .card {
+   height: 560px;
+   box-shadow: black;
+}
+
+.presentation.projects {
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: normal;
+   padding-bottom: 200px;
+}
+
+
+.presentation.projects .text-center a {
+   color: rgba(0,0,0,0.4);
+}
+
+.presentation.projects .container{
+   overflow: visible;
+}
+
+.presentation.projects .card {
+   overflow: hidden;
+}
+
+.presentation.projects .card .md a {
+   color: rgba(0,0,0,0.4);
+}
+
+
+.presentation.projects .card {
+   animation: fade-in 5s infinite linear alternate;
+}
+
+@keyframes fade-in{
+   from{
+   opacity: 0;
+   }
+   to{
+   opacity: 0.8;
+   }
+   }

@@ -1,0 +1,145 @@
+{% extends 'base.html' %} 
+{% block title %}Projects Page{% endblock %} 
+{% block content %}
+<div class="bg-img" style="
+    background-image: url('../static/img/isoko_ltd_logo.jpg'); 
+    background-repeat: no-repeat; 
+    background-position-x: 100%; 
+    background-position-y: center; 
+    background-size: 100%;
+    ">
+    <section class="presentation projects py-3">
+        <div class="text-center projects-title xl">This Is A List Of All The Other <a> Projects.</a></div>
+        <div class="container grid">
+            <div>
+                <div class="card" hef='../biodigester/'>
+                    <p>Designing a biodigester</p>
+                    <p class="md">Hackathon <a>Biodigester</a></p>
+                    <p>worked within an interdisciplinary team</p>
+                    <img src="{{ url_for('static', filename='img/biodigester.jpg') }}" alt="biodigester pricture" srcset="">
+                </div>
+            </div>
+            <div>
+                <div class="card" hef='../machine_learning/'>
+                    <p>Designing and coding my own algorithm</p>
+                    <p class="md">Machine <a>Learning</a></p>
+                    <p>programmed a reinforcement learning model for training a bionic arm</p>
+                    <img class='bionics' src="{{ url_for('static', filename='img/bionics.jpg') }}" alt="random pic" srcset="">
+                </div>
+            </div>
+            <div>
+                <div class="card">
+                    <p>Programmed a Process Safety Application</p>
+                    <p class="md">Expert <a>System</a></p>
+                    <p>conducted research for a summer internship</p>
+                    <img class='img' src="{{ url_for('static', filename='img/favicon.svg') }}" alt="random pic" srcset="">
+                </div>
+            </div>
+            <div>
+                <div class="card">
+                    <p>Making my own cryptocurrency</p>
+                    <p class="md">Iso<a>Koin</a></p>
+                    <p>made my own cryptocurrency running within its own blockchiain</p>
+                    <img class='img' src="{{ url_for('static', filename='img/Logo.png') }}" alt="random pic" srcset="">
+                </div>
+            </div>
+            <div>
+                <div class="card">
+                    <p>Designing an electric generator</p>
+                    <p class="md">Piezoelectric <a>Generator</a></p>
+                    <p>conducted testing on and modelled a piezoelectric generator</p>
+                    <img src="{{ url_for('static', filename='img/stirling.gif') }}" alt="random pic" srcset="">
+                </div>
+            </div>
+            <div>
+                <div class="card">
+                    <p>coding a quantitative trading bot</p>
+                    <p class="md">Trading <a>Bot</a></p>
+                    <p>coded a trading bot that places trades using quant strategies</p>
+                    <img src="{{ url_for('static', filename='img/tradingbot.jpg') }}" alt="random pic" srcset="">
+                </div>
+            </div>
+            <div>
+                <div class="card">
+                    <p>coding a quantitative trading bot</p>
+                    <p class="md">Betting <a>Bot</a></p>
+                    <p>coded a trading bot that places trades using quant strategies</p>
+                    <img src="{{ url_for('static', filename='img/tradingbot.jpg') }}" alt="random pic" srcset="">
+                </div>
+            </div>
+            <div>
+                <div class="card">
+                    <p>coding a quantitative trading bot</p>
+                    <p class="md">Gym <a>Application</a></p>
+                    <p>coded a trading bot that places trades using quant strategies</p>
+                    <img src="{{ url_for('static', filename='img/tradingbot.jpg') }}" alt="random pic" srcset="">
+                </div>
+            </div>
+            <div>
+                <div class="card">
+                    <p>coding a quantitative trading bot</p>
+                    <p class="md">Piezoelectric <a>Crystal</a></p>
+                    <p>coded a trading bot that places trades using quant strategies</p>
+                    <img src="{{ url_for('static', filename='img/tradingbot.jpg') }}" alt="random pic" srcset="">
+                </div>
+            </div>
+            <div>
+                <div class="card">
+                    <p>coding a quantitative trading bot</p>
+                    <p class="md">Automated <a>Systems</a></p>
+                    <p>coded a trading bot that places trades using quant strategies</p>
+                    <img src="{{ url_for('static', filename='img/tradingbot.jpg') }}" alt="random pic" srcset="">
+                </div>
+            </div>
+            <div>
+                <div class="card">
+                    <p>coding a quantitative trading bot</p>
+                    <p class="md">DUN <a>Algorithm</a></p>
+                    <p>coded a trading bot that places trades using quant strategies</p>
+                    <img src="{{ url_for('static', filename='img/tradingbot.jpg') }}" alt="random pic" srcset="">
+                </div>
+            </div>
+            <div>
+                <div class="card">
+                    <p>coding a quantitative trading bot</p>
+                    <p class="md">Engineering <a>Without Borders</a></p>
+                    <p>coded a trading bot that places trades using quant strategies</p>
+                    <img src="{{ url_for('static', filename='img/tradingbot.jpg') }}" alt="random pic" srcset="">
+                </div>
+            </div>
+            <div>
+                <div class="card">
+                    <p>coding a quantitative trading bot</p>
+                    <p class="md">Poker <a>Bot</a></p>
+                    <p>coded a trading bot that places trades using quant strategies</p>
+                    <img src="{{ url_for('static', filename='img/tradingbot.jpg') }}" alt="random pic" srcset="">
+                </div>
+            </div>
+            <div>
+                <div class="card">
+                    <p>coding a quantitative trading bot</p>
+                    <p class="md">Fionn <a>Ferreira</a></p>
+                    <p>coded a trading bot that places trades using quant strategies</p>
+                    <img src="{{ url_for('static', filename='img/tradingbot.jpg') }}" alt="random pic" srcset="">
+                </div>
+            </div>
+            <div>
+                <div class="card">
+                    <p>coding a quantitative trading bot</p>
+                    <p class="md">Process <a>Safety</a></p>
+                    <p>coded a trading bot that places trades using quant strategies</p>
+                    <img src="{{ url_for('static', filename='img/tradingbot.jpg') }}" alt="random pic" srcset="">
+                </div>
+            </div>
+            <div>
+                <div class="card">
+                    <p>coding a quantitative trading bot</p>
+                    <p class="md">Engineering <a>Functions</a></p>
+                    <p>coded a trading bot that places trades using quant strategies</p>
+                    <img src="{{ url_for('static', filename='img/tradingbot.jpg') }}" alt="random pic" srcset="">
+                </div>
+            </div>
+        </div>
+    </section>
+<div>
+{% endblock %}
