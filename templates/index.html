@@ -28,53 +28,76 @@
     <div class="text-center projects-title xl">My Main<a> Projects.</a></div>
     <div class="container flex">
         <div class='first-card'>
-            <div class="card" hef='../biodigester/'>
+            <div class="card" id='card-0' hef='../biodigester/'>
                 <p>Designing a biodigester</p>
                 <p class="md">Hackathon <a>Biodigester</a></p>
                 <p>worked within an interdisciplinary team</p>
+                <div class="card-btn">
+                    <a href="../biodigester" class="btn btn-outline in-card">Read More</a>
+                </div>
                 <img src="{{ url_for('static', filename='img/biodigester.jpg') }}" alt="biodigester pricture" srcset="">
             </div>
         </div>
         <div>
-            <div class="card" hef='../machine_learning/'>
+            <div class="card" id='card-1' hef='../machine_learning/'>
                 <p>Designing and coding my own algorithm</p>
                 <p class="md">Machine <a>Learning</a></p>
                 <p>programmed a reinforcement learning model for training a bionic arm</p>
+                <div class="card-btn">
+                    <a href="https://github.com/kesler20/reinforcement_learning" class="btn btn-outline in-card">Read More</a>
+                </div>
                 <img class='bionics' src="{{ url_for('static', filename='img/bionics.jpg') }}" alt="random pic" srcset="">
             </div>
         </div>
         <div>
-            <div class="card">
+            <div class="card" id='card-2'>
                 <p>Programmed a Process Safety Application</p>
                 <p class="md">Expert <a>System</a></p>
                 <p>conducted research for a summer internship</p>
+                <div class="card-btn">
+                    <a href="https://github.com/kesler20/expert_system" class="btn btn-outline in-card">Read More</a>
+                </div>
                 <img class='img' src="{{ url_for('static', filename='img/favicon.svg') }}" alt="random pic" srcset="">
             </div>
         </div>
         <div>
-            <div class="card">
+            <div class="card" id='card-3'>
                 <p>Making my own cryptocurrency</p>
                 <p class="md">Iso<a>Koin</a></p>
                 <p>made my own cryptocurrency running within its own blockchiain</p>
+                <div class="card-btn">
+                    <a href="https://github.com/kesler20/IsoKoin" class="btn btn-outline in-card">Read More</a>
+                </div>
                 <img class='img' src="{{ url_for('static', filename='img/Logo.png') }}" alt="random pic" srcset="">
             </div>
         </div>
         <div>
-            <div class="card">
+            <div class="card" id='card-4'>
                 <p>Designing an electric generator</p>
                 <p class="md">Piezoelectric <a>Generator</a></p>
                 <p>conducted testing on and modelled a piezoelectric generator</p>
+                <div class="card-btn">
+                    <a href="../biodigester" class="btn btn-outline in-card">Read More</a>
+                </div>
                 <img src="{{ url_for('static', filename='img/stirling.gif') }}" alt="random pic" srcset="">
             </div>
         </div>
         <div>
-            <div class="card">
+            <div class="card" id='card-5'>
                 <p>coding a quantitative trading bot</p>
                 <p class="md">Trading <a>Bot</a></p>
                 <p>coded a trading bot that places trades using quant strategies</p>
+                <div class="card-btn">
+                    <a href="../biodigester" class="btn btn-outline in-card">Read More</a>
+                </div>
                 <img src="{{ url_for('static', filename='img/tradingbot.jpg') }}" alt="random pic" srcset="">
             </div>
         </div>
+        <!---  
+        <div href='../#card-5' class='next-btn'>
+            <img src="{{ url_for('static', filename='img/next.jpg') }}" alt="" srcset="">
+        </div>
+        -->
     </div>
 </section>
 

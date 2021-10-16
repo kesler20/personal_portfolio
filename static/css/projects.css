@@ -10,6 +10,35 @@
    border-color: black;
 }
 
+.presentation.body {
+   position: relative;
+
+}
+
+.container.flex {
+   scroll-snap-type: x mandatory;
+   scroll-behavior: smooth;
+}
+
+.card-btn {
+   padding-top: 20px;
+}
+
+.card-btn .btn {
+   color: black;
+   border-color: black;
+}
+
+.next-btn {
+   position: absolute;
+   top: 90%;
+   left: 77%;
+   transform: translate(-50%, -50%);
+}
+
+.next-btn img {
+   width: 90px;
+}
 
 .presentation.body {
    height: 100vh;
@@ -35,10 +64,6 @@
 
 .presentation.body .text-center a {
    color: rgba(0,0,0,0.4);
-}
-
-.presentation.body .container{
-   overflow: visible;
 }
 
 .presentation.body .card {
