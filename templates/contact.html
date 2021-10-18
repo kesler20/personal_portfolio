@@ -12,10 +12,30 @@
             <div class='text-to-view'>
                 <h3 class="md">Are You An <a>Employer ?</a></h3> <!--remove text align center-->
                 <p  class="xl">Please Fill In <a>The Form Below.</a></p>
-                <p>Otherwise click the button below to return to the main page.</p>
-                <a href="../" class="btn btn-outline">Return To Main Page</a>
+                <a href="#contact-me" class="btn btn-outline">Contact Me</a>
             </div>
         </div>
     </div>
 </section>
+
+<section class="showcase bg-primary introduction">
+    <div id='contact-me' class="container grid">
+        <div class="contact-me showcase-form card">
+            <h2>Contact Me</h2>
+             <form method='post' action='../thankyou'>
+                <div class="form-control">
+                    <input type="text" name="subject" placeholder="Subject" required>
+                </div>
+                <div class="form-control msg">
+                    <input type="text" name="msg" placeholder="Send Message">
+                </div>
+                <div class="form-control">
+                    <input type="email" name="email" placeholder="Email" required>
+                </div>
+                <input type="submit" value="Send message" class="btn btn-outline">
+            </form>
+        </div>
+    </div>
+</section>
+
 {% endblock %}

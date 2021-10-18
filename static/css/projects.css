@@ -237,7 +237,34 @@
 
 
 .presentation.projects .card {
-   animation: fade-in 5s infinite linear alternate;
+   animation: fade-in 5s ease-in-out;
+}
+
+
+/*---------------------
+
+.contact-me {
+   display: flex;
+
+}
+-------------------*/
+
+.contact-me {
+   width: 50vw;
+   height: 40vh;
+}
+
+.thankyou {
+   height: 100vh;
+   position: relative;
+}
+
+.thankyou .container {
+   position: absolute;
+   left: 25%;
+   top: 50%;
+   transform: translateX(-50%);
+   transform: translateY(-50%);
 }
 
 @keyframes fade-in{
