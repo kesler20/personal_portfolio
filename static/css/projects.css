@@ -267,6 +267,10 @@
    transform: translateY(-50%);
 }
 
+.mobile {
+   display: none;
+}
+
 @keyframes fade-in{
    from{
    opacity: 0;
@@ -275,3 +279,83 @@
    opacity: 0.8;
    }
    }
+
+@media (max-width:620px) {
+
+   .text-center.projects-title {
+      font-size: 3rem;
+      padding-left: 100px;
+   }
+
+   .presentation.body {
+      height: 150vh;
+   }
+
+   .first-card {
+      padding-left: 550px;
+   }
+
+   .computer {
+      margin-top: 100px;
+   }
+
+   .languages {
+      display: flex;
+      flex-direction: column;
+   }
+
+   .languages .btn {
+      margin-top: 20px;
+   }
+
+   .languages .card {
+      display: none;
+   }
+
+   .programming h2 a {
+      color: gray;
+   }
+
+   .languages {
+      margin: 150px 0 160px 0;
+      height: 140vh;
+   }
+
+   .mobile {
+      display: contents;
+   }
+
+   .about-me-img {
+      display: none;
+   }
+
+   .text-center.projects-title.xl {
+      display: none;
+   }
+
+   .projects-mobile-title {
+      text-align: center;
+   }
+
+   .project-mobile-title a {
+      color: gray;
+   }
+
+   .projects-grid {
+      display: none;
+   }
+
+   .projects-mobile {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+   }
+
+   .projects-mobile .card {
+      width: 400px;
+      height: 400px;
+      overflow: auto;
+      animation: fade-in 5s ease-in-out;;
+   }
+
+}
