@@ -44,12 +44,13 @@
    height: 100vh;
 }
 .presentation.body .card {
-   height: 560px;
    box-shadow: black;
+   height: 60vh;  /*-------------------------------------*/
+   width: 55vh;
 }
 
 .first-card .card{
-   margin-left: 2200px;
+   margin-left: 1950px;
 }
 
 .presentation.body {
@@ -82,6 +83,13 @@
    width: 500px;
 }
 
+.card img {
+   width: 450px;
+}
+
+#ferro {
+   width: 200px;
+}
 
 /*------------------------------*/
 
@@ -157,9 +165,6 @@
    height: 100vh;
 }
 
-.testimonials.first-card .card{
-   margin-left: 550px;
-}
 /*------------------------------*/
 
 
@@ -208,8 +213,9 @@
 
 
 .presentation.projects .card {
-   height: 560px;
-   box-shadow: black;
+   height: 60vh;
+   width: 60vh;
+   box-shadow: black;  /*-------------------------------------*/
 }
 
 .presentation.projects {
@@ -230,6 +236,10 @@
 .presentation.projects .card {
    overflow: hidden;
 }
+
+.projects .card {
+   overflow: hidden;  /*-------------------------------------*/
+} 
 
 .presentation.projects .card .md a {
    color: rgba(0,0,0,0.4);
@@ -281,6 +291,10 @@
    }
 
 @media (max-width:620px) {
+   
+   .card img {
+      display: none;
+   }
 
    .text-center.projects-title {
       font-size: 3rem;
@@ -291,8 +305,8 @@
       height: 150vh;
    }
 
-   .first-card {
-      padding-left: 550px;
+   .last-card {
+      padding-right: 200px;
    }
 
    .computer {
@@ -342,20 +356,8 @@
    }
 
    .projects-grid {
-      display: none;
-   }
-
-   .projects-mobile {
       display: flex;
-      flex-wrap: wrap;
       flex-direction: column;
-   }
-
-   .projects-mobile .card {
-      width: 400px;
-      height: 400px;
-      overflow: auto;
-      animation: fade-in 5s ease-in-out;;
    }
 
 }
