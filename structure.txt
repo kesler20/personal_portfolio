@@ -1,53 +1,68 @@
-Introduction:
-Hello There, My Name Is
-Kesler Isoko
-And I have passion for building things
-cardano btn
-samsung galaxy s8 default wallpaper
+<!---
+{% endblock %}
+{% extends 'base.html' %}
+{% block title %}Piezoelectric Generator{% endblock %}
+{% block content %}
+<section class="showcase head bg-primary py-3">
+    <div class="bg-img">
+        <div class="container grid">
+            <div">
+                <h3 class="md">different configurations for</h3> 
+                <h1 class="xl">Piezoelectric Power Generation.</h1>
+                <p>implemented Fusion360 and Python to model various configurations</p>
+            </div>
+            <div>
+            </div>
+        </div>
+    </div>
+</section>
 
-hire me invitation that sends them to the cool call to action form
+<div class="md">
+    <p>A piezoelectric crystall is any crystal that generates electricity whne pressure is applied</p>
+</div>
 
-carousel copied from apple 
-My propjects:
-•	Hackathon biodigester 
-•	Expert System 
-•	Cryptocurrency 
-•	Piezoelectric crystal
-•	Bionics/ robotic arm 
-•	Algorithmic trading bot 
-
-
-use computer image and cards with icons 
-Technical skills :
-•	Programming 
-•	Styling 
-•	Markup 
-•	Graphic design 
-•	Fusion 360 
-•	Aspen plus 
-•	Ansys 
-•	Latex 
-
-put invitation to collaborate on the side
-About me:
-I am 3rd year Meng Chemical Engineering student and a self-taught programmer. My interest is in optimisation and AI applied to large scale production systems. 
-Hobbies:
-•	Debating
-•	Football
-•	Gym
-•	Philosophy 
-
-similar to the project section use the carousel from apple 
-Testimonials:
-Joan, Jonathan howse, bionic ppl, team mates 
-
-put a timeline that pops up if people want to learn more about me
-History
+<section class="presentation head bg-light">
+    <div class="container flex">
+        <div>
+            <img src="{{ url_for('static', filename='fusion_360_portfolio/stator_mould') }}" alt="" srcset="">
+        </div>
+    </div>
+</section>
 
 
+<section class="presentation head bg-light">
+    <div class="container flex">
+        <div>
+            <img src="{{ url_for('static', filename='fusion_360_portfolio/alternator.png') }}" alt="" srcset="">
+        </div>
+        <div class='md'>
+            <p>Commercial Piezoelectric Ceramics can look as the following</p>
+        </div>
+    </div>
+</section>
 
 
+<section class="presentation body bg-primary">
+    <div class="container flex">
+        <div>
+            <img src="{{ url_for('static', filename='fusion_360_portfolio/coil_winder1.png') }}" alt="" srcset="">
+        </div>
+        <div>
+            <img src="{{ url_for('static', filename='fusion_360_portfolio/coil_winder2.png') }}" alt="" srcset="">
+        </div>
+        <div>
+            <img src="{{ url_for('static', filename='fusion_360_portfolio/coil_winder3.png') }}" alt="" srcset="">
+        </div>
+    </div>
+</section>
 
-
-
-
+<section class="presentation body bg-light">
+    <div class="container flex">
+        <div><p>The following configuration inspired by NASA's thermoelectric generator is the following where the crystal is hit by the piston</p></div>
+        <div>
+            <img src="{{ url_for('static', filename='fusion_360_portfolio/coil_winder4.png') }}" alt="" srcset="">
+        </div>
+    </div>
+</section>
+{% endblock %}
+----->

@@ -1,64 +1,100 @@
 {% extends 'base.html' %}
-{% block title %}Piezoelectric Generator{% endblock %}
+{% block title %}Engineers Without Borders{% endblock %}
 {% block content %}
-<section class="showcase head bg-primary py-3">
+<section class="showcase head bg-primary py-3" style="
+background-image: url('../static/img/wind.jpg'); 
+background-repeat: no-repeat; 
+background-position-x: 100%; 
+background-attachment: fixed;
+background-position-y: center; 
+background-size: 100%;
+    ">
     <div class="bg-img">
         <div class="container grid">
-            <div">
-                <h3 class="md">different configurations for</h3> <!--remove text align center-->
-                <h1 class="xl">Piezoelectric Power Generation.</h1>
-                <p>implemented Fusion360 and Python to model various configurations</p>
+            <div style='color: black'>
+                <h3 class="md">Wind Turbine</h3>
+                <h1 class="xl">Technical Design and Modelling</h1>
             </div>
             <div>
             </div>
         </div>
     </div>
 </section>
-
-<div class="md">
-    <p>A piezoelectric crystall is any crystal that generates electricity whne pressure is applied</p>
-</div>
-
-<section class="presentation head bg-light">
+<section class="presentation fionn head">
     <div class="container flex">
         <div>
-            <img src="{{ url_for('static', filename='fusion_360_portfolio/stator_mould') }}" alt="" srcset="">
+            <img class='fionn-img' src="{{ url_for('static', filename='img/ewb.jpg') }}" alt="" srcset="">
+        </div>
+        <div class="flex-text">
+            <h3 class="md">Context</h3>
+            <p>
+                During my second year of university, I joined the engineers without borders electrical team to work on a project involving designing and manufacturing a wind turbine from scratch.  This required modelling not only the turbine but also the manufacturing tools that we would use to ensure 
+                that the entire team would understand the manufacturing process. 
+                For this project I mainly worked on the modelling using Fusion 360.
+            </p>
         </div>
     </div>
 </section>
 
-
-<section class="presentation head bg-light">
-    <div class="container flex">
-        <div>
-            <img src="{{ url_for('static', filename='fusion_360_portfolio/alternator.png') }}" alt="" srcset="">
-        </div>
-        <div class='md'>
-            <p>Commercial Piezoelectric Ceramics can look as the following</p>
-        </div>
-    </div>
-</section>
-
-
-<section class="presentation body bg-primary">
-    <div class="container flex">
-        <div>
-            <img src="{{ url_for('static', filename='fusion_360_portfolio/coil_winder1.png') }}" alt="" srcset="">
-        </div>
-        <div>
-            <img src="{{ url_for('static', filename='fusion_360_portfolio/coil_winder2.png') }}" alt="" srcset="">
-        </div>
-        <div>
-            <img src="{{ url_for('static', filename='fusion_360_portfolio/coil_winder3.png') }}" alt="" srcset="">
+<section class="presentation fionn body">
+    <div class="container">
+        <p>The Following Images show the Fusion 360 models that I made for the coil winder</p>
+        <div class="container flex">
+            <div>
+                <img class='fionn-img' src="{{ url_for('static', filename='fusion_360_portfolio/coil_winder1.png') }}" alt="" srcset="">
+            </div>
+            <div>
+                <img class='fionn-img'src="{{ url_for('static', filename='fusion_360_portfolio/coil_winder2.png') }}" alt="" srcset="">
+            </div>
+            <div>
+                <img class='fionn-img' src="{{ url_for('static', filename='fusion_360_portfolio/coil_winder3.png') }}" alt="" srcset="">
+            </div>
         </div>
     </div>
 </section>
 
-<section class="presentation body bg-light">
-    <div class="container flex">
-        <div><p>The following configuration inspired by NASA's thermoelectric generator is the following where the crystal is hit by the piston</p></div>
+<section class="presentation fionn body">
+    <div class="container">
         <div>
-            <img src="{{ url_for('static', filename='fusion_360_portfolio/coil_winder4.png') }}" alt="" srcset="">
+            <h3 class="md">Stator Mould and Alterantor</h3>
+            <p>The stator mould was designed in order to be 3D printed or to have an idea of what is required when anufacturing would have started.
+                Nevertheless, many of the parts of the design where made following <a href="{{ url_for('static', filename='Hugh Piggott Axial-flow PMG wind turbine May 2003.pdf') }}">this document</a> that provided a robust technical basis to our design 
+                and guidance thereby enabling correct sizing, geometry and a clear end product that the entire team worked on.
+            </p>
+        </div>
+        <div class='container flex'>
+            <div>
+                <img class='fionn-img' src="{{ url_for('static', filename='fusion_360_portfolio/stator_mould.png') }}" alt="" srcset="">
+            </div>
+            <div>
+                <img class='fionn-img' src="{{ url_for('static', filename='fusion_360_portfolio/alternator.png') }}" alt="" srcset="">
+            </div>
+        </div>        
+
+    </div>
+</section>
+
+<section class="presentation fionn body">
+    <div class="container flex">
+        <div class="flex-text">
+            <p>
+                <h3 class="md">Functional Design</h3>
+                The design of the various parts was made with two main goals in mind:</p>
+                <p>
+                <ul>
+                    <li>to provide clarity (aestatically adequate)</li>
+                    <li>to model mechaical parts that could be 3D printed</li>
+                </ul>
+                </p>
+            <p>
+                As such the design wasn't only made to replicate what the actual parts would look like in reality,
+                but also to embed some of their functionality from the design itself, by i.e. making sure moving parts had the 
+                right degrees of freeedom and that the proportionality of each component was numerically accurate so that the centre of 
+                mass of the parts would be the same as the one of the real parts.
+            </p>
+        </div>
+        <div>
+            <img class='fionn-img' src="{{ url_for('static', filename='fusion_360_portfolio/coil_winder4.png') }}" alt="" srcset="">
         </div>
     </div>
 </section>

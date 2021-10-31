@@ -5,9 +5,9 @@
     <div class="bg-img">
         <div class="container grid">
             <div">
-                <h3 class="md">different configurations for</h3> <!--remove text align center-->
+                <h3 class="md">Different configurations for</h3> <!--remove text align center-->
                 <h1 class="xl">Piezoelectric Power Generation.</h1>
-                <p>implemented Fusion360 and Python to model various configurations</p>
+                <p>Implemented Fusion360 and Python to model various configurations</p>
             </div>
             <div>
             </div>
@@ -15,12 +15,12 @@
     </div>
 </section>
 
-<div class="md">
-    <p>A piezoelectric crystall is any crystal that generates electricity whne pressure is applied</p>
-</div>
-
-<section class="presentation head bg-light">
-    <div class="container flex">
+<section class="presentation piezo head">
+    <div class="container">
+        <div>
+            <h2 class='xl'>What is a piezoelectric crystal?</h2>
+            <p>A piezoelectric crystall is any crystal that generates electricity when pressure is applied</p>
+        </div>
         <div>
             <img src="{{ url_for('static', filename='img/piezo.gif') }}" alt="" srcset="">
         </div>
@@ -28,33 +28,54 @@
 </section>
 
 
-<section class="presentation head bg-light">
-    <div class="container flex">
+<section class="presentation piezo head">
+    <div class="container ">
+        <div>
+            <h2 class='xl'>What does it look like?</h2>
+            <p>The following picture shows commercial piezoelectric ceramics</p>
+        </div>
         <div>
             <img src="{{ url_for('static', filename='img/piezo_ceramic.jpg') }}" alt="" srcset="">
-        </div>
-        <div class='md'>
-            <p>Commercial Piezoelectric Ceramics can look as the following</p>
         </div>
     </div>
 </section>
 
 
-<section class="presentation body bg-primary">
-    <div class="container flex">
+<section class="presentation piezo head">
+    <div class="container">
+        <div>
+            <h2 class='xl'>Modelling different configurations</h2>
+            <p>My initial idea was to find whether placing piezoelectric ceramics at the pipe entrance where the pressure drop is the greatest,
+                would generate enough power to run electric pumps. This configuration is illustrated below.
+            </p>
+        </div>
         <div>
             <img src="{{ url_for('static', filename='fusion_360_portfolio/piezoelectric1.png') }}" alt="" srcset="">
         </div>
         <div>
-            <img src="{{ url_for('static', filename='fusion_360_portfolio/piezoelectric2.png') }}" alt="" srcset="">
+            <p>Consequently, I was introduced to thermoelectric generators and stirling engines. Therefore I came up with the second configuration inspired by NASAs 
+                Radioisotope thermoelectric generator to make a piezoelectric generator that produces power from solar energy. 
+                <div><img src="{{ url_for('static', filename='img/stirling.gif') }}" alt="" srcset=""></div>
+                The heat source would heat the head of the stirling engine,
+                and as the body of the tool is insulated using silica aerogel, a temperature gradient will generate a pressure gradient of the working fluid, i.e. hydrogen
+                that will expand and contract as such generating a force to push the piston up and down. 
+                </p>
+                <p>This mechanical energy can be transformed into electricity by placing a piezoelectric crystal
+                at the tip of the displacer piston, since by doing so the piston would hit the crystal repetitively and by using a permanent magnet as the power piston, and surround it with cupper wires 
+                so that an electric current would be induced into the wires as the power piston moves up and down. 
+            </p>
         </div>
     </div>
 </section>
-
-<section class="presentation body bg-light">
-    <div class="container flex">
-        <div><p>The following configuration inspired by NASA's thermoelectric generator is the following where the crystal is hit by the piston</p></div>
-        <div><img src="{{ url_for('static', filename='img/stirling.gif') }}" alt="" srcset=""></div>
+<section class="presentation piezo head">
+    <div class="container">
+        <div>
+            <p>As mentioned before the heat source would be solar energy and below you can observe a possible configuration of how to harness it.</p>
+            <div>
+                <img src="{{ url_for('static', filename='fusion_360_portfolio/parabolic_heating.png') }}" alt="" srcset="">
+            </div>
+            <p>In this case the piezoelectric generator would be placed at the centre of the focal point where the heat is concentrated</p>
+        </div>
     </div>
 </section>
 {% endblock %}

@@ -47,6 +47,40 @@
   margin-bottom: 10px;
   letter-spacing: 2px;
 }
+.fionn.head {
+  height: 60vh;
+}
+
+.fionn.body {
+  height: 90vh;
+}
+
+.fionn-img {
+  width: 100%;
+}
+
+.fionn-img4 {
+  width: 30%;
+  justify-content: center;
+}
+
+.flex-text {
+  margin: 50px;
+}
+
+.giff {
+  width: 40%;
+}
+
+.piezo .container {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.piezo .container img {
+  width: 60%;
+}
+
 @media only screen and (min-width: 768px) {
   .workflow:before {
     content: "";

@@ -1,65 +1,106 @@
 {% extends 'base.html' %}
-{% block title %}Piezoelectric Generator{% endblock %}
+{% block title %}Ferro Fluid Seperator{% endblock %}
 {% block content %}
-<section class="showcase head bg-primary py-3">
+<section class="showcase head bg-primary py-3" style="
+background-image: url('../static/img/microplastics.jpg'); 
+background-repeat: no-repeat; 
+background-position-x: 100%; 
+background-attachment: fixed;
+background-position-y: center; 
+background-size: 100%;
+">
     <div class="bg-img">
         <div class="container grid">
             <div">
-                <h3 class="md">different configurations for</h3> <!--remove text align center-->
-                <h1 class="xl">Piezoelectric Power Generation.</h1>
-                <p>implemented Fusion360 and Python to model various configurations</p>
+                <h3 class="md">Water Purification</h3>
+                <h1 class="xl">Removing Microplastics From Water</h1>
             </div>
             <div>
             </div>
         </div>
     </div>
 </section>
-
-<div class="md">
-    <p>A piezoelectric crystall is any crystal that generates electricity whne pressure is applied</p>
-</div>
-
-<section class="presentation head bg-light">
+<section class="presentation fionn head">
     <div class="container flex">
         <div>
-            <img src="{{ url_for('static', filename='img/piezo.gif') }}" alt="" srcset="">
+            <img src="{{ url_for('static', filename='img/GEC.jpg') }}" alt="" srcset="">
+        </div>
+        <div class="flex-text">
+            <h3 class="md">Context</h3>
+            <p>
+            As part of the GEC week we were asked to develop a solution for reducing pollution in 
+            Johannesburg, South Africa 
+            As drinking water in Johannesburg is contaminated with microplastics, we decided to 
+            implement Fionn Ferreira’s magnetic separation and scale up the process designing a separation unit.
+            </p>
+            <p>The Following Images show the Fusion 360 model that I made of the seperator</p>
+        </div>
+    </div>
+</section>
+
+<section class="presentation fionn body">
+    <div class="container flex">
+        <div>
+            <img class='fionn-img' src="{{ url_for('static', filename='fusion_360_portfolio/fionn_ferreira1.png') }}" alt="" srcset="">
+        </div>
+        <div>
+            <img class='fionn-img' src="{{ url_for('static', filename='fusion_360_portfolio/fionn_ferreira2.png') }}" alt="" srcset="">
+        </div>
+        <div>
+            <img class='fionn-img' src="{{ url_for('static', filename='fusion_360_portfolio/fionn_ferreira3.png') }}" alt="" srcset="">
+        </div>
+    </div>
+</section>
+
+<section class="presentation fionn body">
+    <div class="container">
+        <div>
+            <h3 class="md">Method</h3>
+            <p>The seperation method was first introduced by a physicist called Arden Warner 
+                who came up with a way to remove oil spills by magnetizing the fluid. 
+                Our solution focused for a smaller scaled implementation first as was designed to purify
+                drinking water that was going into public fountains.
+                The separators implemented a PID controller that regulates the inflow of 
+                ferrofluids, contaminated water and the outflow. The PID controller would be connected to a probe that would measure the level of contamination of the drinking water.
+                Our seperation implemented a stirrer that would magnetise to attract the 
+                ferrofluids and microplastics migrated to the nonpolar phase. 
+            </p>
+        </div>        
+        <div>
+            <img class='giff' class='fionn-img' src="{{ url_for('static', filename='img/ferrofluid.gif') }}" alt="" srcset="">
         </div>
     </div>
 </section>
 
 
-<section class="presentation head bg-light">
-    <div class="container flex">
-        <div>
-            <img src="{{ url_for('static', filename='img/piezo_ceramic.jpg') }}" alt="" srcset="">
+<section class="presentation fionn body ">
+    <div class="container">
+        <div class="flex-text">
+            <h3 class="md">Solution</h3>
+            <p>The following seperator removes microplastics from water using a liquid ferro fluid.
+            Once the ferro fluid is added the microplastics will migrate to the oil phase that will be attracted 
+            to one side of the seperator using a magnet
+            The water will be extracted from the other side of the magnet and recycled untill the desired purity is achieved</p>
         </div>
-        <div class='md'>
-            <p>Commercial Piezoelectric Ceramics can look as the following</p>
+        <div>
+            <img class='fionn-img4' src="{{ url_for('static', filename='fusion_360_portfolio/fionn_ferreira4.png') }}" alt="" srcset="">
         </div>
     </div>
 </section>
 
-
-<section class="presentation body bg-primary">
+<section class="presentation fionn body">
     <div class="container flex">
-        <div>
-            <img src="{{ url_for('static', filename='fusion_360_portfolio/fionn_ferreira1.png') }}" alt="" srcset="">
+        <div class="flex-text">
+            <p>
+                <h3 class="md">Innovation</h3>
+                The purity level is measured by the probe that was designed to take pictures of water 
+                samples to send to a computer to calculate the number of contaminants using Adobe Photoshop
+            </p>
         </div>
         <div>
-            <img src="{{ url_for('static', filename='fusion_360_portfolio/fionn_ferreira2.png') }}" alt="" srcset="">
-        </div>
-        <div>
-            <img src="{{ url_for('static', filename='fusion_360_portfolio/fionn_ferreira3.png') }}" alt="" srcset="">
+            <img src="{{ url_for('static', filename='img/probe.gif') }}" alt="" srcset="">
         </div>
     </div>
 </section>
 
-<section class="presentation body bg-light">
-    <div class="container flex">
-        <div><p>The following configuration inspired by NASA's thermoelectric generator is the following where the crystal is hit by the piston</p></div>
-        <div>
-            <img src="{{ url_for('static', filename='fusion_360_portfolio/fionn_ferreira4.png') }}" alt="" srcset="">
-        </div>
-    </div>
-</section>
 {% endblock %}
