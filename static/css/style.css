@@ -35,15 +35,20 @@ p {
 }
 
 
-
 .showcase .grid {
     overflow: visible;
     grid-template-columns: 55% auto;
     gap: 30px;
 }
-  
-.showcase-text {
-    animation: slideInFromLeft 1s ease-in;
+
+.showcase p,.showcase a {
+    animation: fade-in 4s ease-in;
+}
+.showcase .xl {
+    animation: fade-in 2s ease-in;
+}
+.showcase .md {
+    animation: fade-in 0.2s ease-in;
 }
   
 .showcase-form {
@@ -54,7 +59,6 @@ p {
     padding: 40px;
     z-index: 100;
     justify-self: flex-end;
-    animation: slideInFromRight 1s ease-in;
 }
   
 .showcase-form .form-control {
@@ -121,12 +125,10 @@ nav {
 
 .presentation h1{
     font-size: 60px;
-    animation: slideInFromLeft 1s ease-in-out;
 }
 
 .presentation h2 {
     font-size: 30px;
-    animation: slideInFromRight 1s ease-in-out;
 }
 
 .presentation p {

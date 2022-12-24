@@ -136,7 +136,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    width: 100%;
+}
+
+.flex-start {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
 }
 
 .grid {

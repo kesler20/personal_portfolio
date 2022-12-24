@@ -59,11 +59,8 @@
    padding-bottom: 200px;
 }
 
-.projects-title {
-   margin-right: 500px;
-}
 
-.presentation.body .text-center a {
+.presentation.body .flex a {
    color: rgba(0,0,0,0.4);
 }
 
@@ -228,7 +225,7 @@
 }
 
 
-.presentation.projects .text-center a {
+.presentation.projects .flex a {
    color: rgba(0,0,0,0.4);
 }
 
@@ -299,11 +296,6 @@
       display: none;
    }
 
-   .text-center.projects-title {
-      font-size: 3rem;
-      padding-left: 100px;
-   }
-
    .presentation.body {
       height: 150vh;
    }
@@ -343,10 +335,6 @@
    }
 
    .about-me-img {
-      display: none;
-   }
-
-   .text-center.projects-title.xl {
       display: none;
    }
 
