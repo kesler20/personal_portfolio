@@ -1,6 +1,8 @@
 from flask import redirect, url_for, render_template, request, session, flash
 from _database_model import *
 
+
+
 @app.route('/')
 def home():
     return render_template('index.html')
