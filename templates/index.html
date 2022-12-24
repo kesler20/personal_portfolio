@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% block title %}Home Page{% endblock %}
 {% block content %}
-<section class="showcase head bg-primary py-3">
+<section class="hero head bg-primary py-3">
     <div class="bg-img" style="
         background-image: url('../static/img/Round-Sphere-Moving.gif'); 
         background-repeat: no-repeat; 
@@ -24,10 +24,10 @@
         </div>
     </div>
 </section>
-<section class="presentation body bg-light py-3">
+<section class="my-main-projects body bg-light py-3">
     <div class="flex projects-title xl">My Main<a> Projects.</a></div>
-    <div class="container flex">
-        <div class='first-card'>
+    <div class="container flex projects-cards">
+        <div>
             <div class="card" id='card-0' hef='../biodigester/'>
                 <p>Designing a biodigester</p>
                 <p class="md">Hackathon <a>Biodigester</a></p>
@@ -38,7 +38,7 @@
                 <img src="{{ url_for('static', filename='img/biodigester.jpg') }}" alt="biodigester pricture" srcset="">
             </div>
         </div>
-        <div>
+        <div class="hide">
             <div class="card" id='card-1' hef='../machine_learning/'>
                 <p>Designing and coding my own algorithm</p>
                 <p class="md">Machine <a>Learning</a></p>
@@ -49,7 +49,7 @@
                 <img class='bionics' src="{{ url_for('static', filename='img/bionics.jpg') }}" alt="random pic" srcset="">
             </div>
         </div>
-        <div>
+        <div class="hide">
             <div class="card" id='card-2'>
                 <p>Programmed a Process Safety Application</p>
                 <p class="md">Expert <a>System</a></p>
@@ -60,7 +60,7 @@
                 <img class='img' src="{{ url_for('static', filename='img/favicon.svg') }}" alt="random pic" srcset="">
             </div>
         </div>
-        <div>
+        <div class="hide">
             <div class="card" id='card-3'>
                 <p>Making my own cryptocurrency</p>
                 <p class="md">Iso<a>Koin</a></p>
@@ -71,7 +71,7 @@
                 <img class='img' src="{{ url_for('static', filename='img/Logo.png') }}" alt="random pic" srcset="">
             </div>
         </div>
-        <div>
+        <div class="hide">
             <div class="card" id='card-4'>
                 <p>Designing an electric generator</p>
                 <p class="md">Piezoelectric <a>Generator</a></p>
@@ -82,7 +82,7 @@
                 <img src="{{ url_for('static', filename='img/stirling.gif') }}" alt="random pic" srcset="">
             </div>
         </div>
-        <div class='last-card'>
+        <div class="hide">
             <div class="card" id='card-5'>
                 <p>coding a quantitative trading bot</p>
                 <p class="md">Trading <a>Bot</a></p>
@@ -92,17 +92,15 @@
                 </div>
                 <img src="{{ url_for('static', filename='img/tradingbot.jpg') }}" alt="random pic" srcset="">
             </div>
-        </div>
-        <!---  
-        <div href='../#card-5' class='next-btn'>
-            <img src="{{ url_for('static', filename='img/next.jpg') }}" alt="" srcset="">
-        </div>
-        -->
+        </div>  
+        <div class="next-btn">
+            <i class="fa fa-arrow-right"></i>
+        </div>     
     </div>
 </section>
 
 
-<section class="showcase introduction bg-primary" style="
+<section class="request-collaborate bg-primary" style="
     background-image: url('../static/img/black-background.gif'); 
     background-repeat: no-repeat; 
     background-position-x: 70%; 
@@ -111,13 +109,13 @@
     background-size: 70%;
     ">
     <div class="container grid">
-        <div class="showcase-text">
+        <div class="request-collaborate-text">
             <h1>Do you want to collaorate?</h1>
             <p>If you want to work on new exciting projects and you are looking for someone with a technical background please fill in the form on the right. Nevertheless, if you are an employer you can go on the contac me section using the navbar or click on the botton below </p>
             <a href="../contact" class="btn btn-outline">Hire Me</a>
         </div>
 
-        <div class="showcase-form card">
+        <div class="request-collaboration-form card">
             <h2>Request Collaboration</h2>
              <form method='post' action='../thankyou'>
                 <div class="form-control">
@@ -215,9 +213,9 @@
     </div>
   </div>
 
-  <section class="showcase introduction bg-light">
+  <section class="hero introduction bg-light">
     <div class="container about-me grid">
-        <div class="showcase-text">
+        <div class="hero-text">
             <h1 class='xl'>About <a>Me</a>.</h1>
             <p>  I am 3rd year Meng Chemical Engineering student and a self-taught programmer. My interest is in optimisation and AI applied to large scale production systems. 
                 Hobbies:

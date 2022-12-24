@@ -1,0 +1,298 @@
+/*-------------------- HERO SECTION -----------------------------*/
+.hero .grid {
+  overflow: visible;
+  grid-template-columns: 55% auto;
+  gap: 30px;
+}
+
+/* cascading effect for the hero section when it is initially rendered */
+.hero p,
+.hero a {
+  animation: fade-in 4s ease-in;
+}
+.hero .xl {
+  animation: fade-in 2s ease-in;
+}
+.hero .md {
+  animation: fade-in 0.2s ease-in;
+}
+
+.hero .bg-img {
+  height: 90vh;
+}
+
+.hero .btn {
+  color: #000;
+  background-color: white;
+  border-color: black;
+}
+
+/*------------------ MY MAIN PROJECTS SECTION ------------------------*/
+
+.my-main-projects.body .card {
+  box-shadow: black;
+  height: 60vh;
+  width: 55vh;
+}
+
+.my-main-projects.body {
+  position: relative;
+  height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  padding-bottom: 200px;
+}
+
+.my-main-projects.body .flex a {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.my-main-projects.body .card {
+  overflow: hidden;
+}
+
+.my-main-projects.body .card .md a {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.my-main-projects p, .my-main-projects a{
+  animation: fade-in 1s ease-in-out;
+}
+
+.projects-title.flex {
+  padding-right: 110px;
+}
+
+.projects-cards.container {
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  overflow: hidden;
+}
+
+.next-btn {
+  position: absolute;
+  top: 90%;
+  left: 77%;
+  transform: translate(-50%, -50%);
+}
+
+.next-btn img {
+  width: 90px;
+}
+
+.img {
+  width: 400px;
+}
+
+.bionics {
+  width: 500px;
+}
+
+.card img {
+  width: 450px;
+}
+
+#ferro {
+  width: 200px;
+}
+
+/*-------------------- REQUEST COLLABORATION SECTION -------------------------*/
+.request-collaborate .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 200vh;
+  overflow: hidden;
+}
+
+.request-collaborate-text {
+  text-align: center;
+  margin-top: 40px; /* this is to push it down a bit */
+}
+
+.request-collaboration-form {
+  position: relative;
+  top: 60px;
+  height: 350px;
+  width: 300px;
+  padding: 40px;
+  z-index: 100;
+  justify-self: flex-end;
+}
+
+.request-collaboration-form.card {
+  height: 360px;
+}
+
+.request-collaboration-form .form-control {
+  margin: 30px 0;
+}
+
+.request-collaboration-form input[type="text"],
+.request-collaboration-form input[type="email"] {
+  border: 0;
+  border-bottom: 1px solid #b4becb;
+  width: 100%;
+  padding: 3px;
+  font-size: 16px;
+}
+
+.request-collaboration-form input:focus {
+  outline: none;
+}
+
+.request-collaborate .btn {
+  color: #000;
+  background-color: white;
+  border-color: black;
+}
+
+/*---------------------- PROGRAMMING LANGUAGES SECTION --------------*/
+
+.languages {
+  position: relative;
+  height: 100vh;
+}
+
+.languages .card {
+  position: absolute;
+}
+
+.languages .card:nth-child(1) {
+  left: 45%;
+  top: 20%;
+  transform: translateX(-50%);
+  transform: translateY(-50%);
+  transform: rotate(-45deg);
+}
+
+.languages .card:nth-child(2) {
+  left: 50%;
+  top: 7%;
+  transform: translateX(-50%);
+  transform: translateY(-50%);
+  transform: rotate(-35deg);
+}
+
+.languages .card:nth-child(3) {
+  left: 60%;
+  top: 10%;
+  transform: translateX(-50%);
+  transform: translateY(-50%);
+}
+
+.languages .card:nth-child(4) {
+  left: 70%;
+  top: 7%;
+  transform: translateX(-50%);
+  transform: translateY(-50%);
+  transform: rotate(35deg);
+}
+
+.languages .card:nth-child(5) {
+  left: 75%;
+  top: 20%;
+  transform: translateX(-50%);
+  transform: translateY(-50%);
+  transform: rotate(45deg);
+}
+
+.computer {
+  width: 25%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%);
+  transform: translateY(-50%);
+}
+
+.programming {
+  padding-left: 200px;
+}
+.languages .card img {
+  width: 100px;
+}
+
+.programming .btn {
+  color: black;
+  border-color: black;
+}
+
+
+/*--------------------- ABOUT ME SECTION --------------------------*/
+
+.about-me {
+  color: black;
+}
+
+.about-me a {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.about-me img {
+  box-shadow: 0 30px 30px rgba(0, 0, 0, 0.7);
+  width: 100%;
+  border-radius: 20%;
+}
+
+.contact-me {
+  width: 50vw;
+  height: 40vh;
+}
+
+.thankyou {
+  height: 100vh;
+  position: relative;
+}
+
+.thankyou .container {
+  position: absolute;
+  left: 25%;
+  top: 50%;
+  transform: translateX(-50%);
+  transform: translateY(-50%);
+}
+
+.next-btn {
+  background-color: var(--primary-color);
+  color: var(--light-color);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  box-shadow: 2px 3px 4px 2px rgb(180, 180, 180);
+  cursor: pointer;
+}
+
+.next-btn:hover {
+  background-color: #333;
+}
+.mobile {
+  display: none;
+}
+
+ /* ------------------ MEDIA QUERIES SECTION ---------------------- */
+
+@media (max-width: 720px) {
+  .flex.flex.projects-title {
+    font-size: 2rem;
+    padding-right: 0px;
+    padding-left: 36px;
+    justify-content: start;
+  }
+
+  .request-collaborate .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .request-collaboration-form {
+    justify-self: center;
+    margin: auto;
+  }
+}

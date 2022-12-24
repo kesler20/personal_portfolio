@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
 
 :root {
   --primary-color: #047aed;
@@ -16,7 +16,7 @@
 }
 
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   color: #333;
   line-height: 1.6;
 }
@@ -81,33 +81,33 @@ pre {
   justify-content: space-between;
 }
 
-/* Showcase */
-.showcase {
+/* hero */
+.hero {
   height: 400px;
   background-color: var(--primary-color);
   color: #fff;
   position: relative;
 }
 
-.showcase h1 {
+.hero h1 {
   font-size: 40px;
 }
 
-.showcase p {
+.hero p {
   margin: 20px 0;
 }
 
-.showcase .grid {
+.hero .grid {
   overflow: visible;
   grid-template-columns: 55% auto;
   gap: 30px;
 }
 
-.showcase-text {
+.hero-text {
   animation: slideInFromLeft 1s ease-in;
 }
 
-.showcase-form {
+.request-collaboration-form {
   position: relative;
   top: 60px;
   height: 350px;
@@ -118,12 +118,12 @@ pre {
   animation: slideInFromRight 1s ease-in;
 }
 
-.showcase-form .form-control {
+.request-collaboration-form .form-control {
   margin: 30px 0;
 }
 
-.showcase-form input[type='text'],
-.showcase-form input[type='email'] {
+.request-collaboration-form input[type="text"],
+.request-collaboration-form input[type="email"] {
   border: 0;
   border-bottom: 1px solid #b4becb;
   width: 100%;
@@ -131,13 +131,13 @@ pre {
   font-size: 16px;
 }
 
-.showcase-form input:focus {
+.request-collaboration-form input:focus {
   outline: none;
 }
 
-.showcase::before,
-.showcase::after {
-  content: '';
+.hero::before,
+.hero::after {
+  content: "";
   position: absolute;
   height: 100px;
   bottom: -70px;
@@ -266,15 +266,15 @@ pre {
 }
 
 .fa-facebook:hover {
-  color: #1773EA;
+  color: #1773ea;
 }
 
 .fa-instagram:hover {
-  color: #B32E87;
+  color: #b32e87;
 }
 
 .fa-twitter:hover {
-  color: #1C9CEA;
+  color: #1c9cea;
 }
 
 /* Animations */
@@ -321,7 +321,7 @@ pre {
 /* Tablets and under */
 @media (max-width: 768px) {
   .grid,
-  .showcase .grid,
+  .hero .grid,
   .stats .grid,
   .cli .grid,
   .cloud .grid,
@@ -331,17 +331,17 @@ pre {
     grid-template-rows: 1fr;
   }
 
-  .showcase {
+  .hero {
     height: auto;
   }
 
-  .showcase-text {
+  .hero-text {
     text-align: center;
     margin-top: 40px;
     animation: slideInFromTop 1s ease-in;
   }
 
-  .showcase-form {
+  .request-collaboration-form {
     justify-self: center;
     margin: auto;
     animation: slideInFromBottom 1s ease-in;
@@ -384,8 +384,8 @@ pre {
     padding: 10px;
     background-color: rgba(0, 0, 0, 0.1);
   }
-  
-  .showcase-form {
+
+  .request-collaboration-form {
     width: 300px;
   }
 }

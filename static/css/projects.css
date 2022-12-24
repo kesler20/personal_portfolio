@@ -1,354 +1,52 @@
-
-.showcase
-.bg-img {
-   height: 90vh;
+.presentation h1 {
+  font-size: 60px;
 }
 
-.showcase .btn {
-   color: #000;
-   background-color: white;
-   border-color: black;
+.presentation h2 {
+  font-size: 30px;
 }
 
-.presentation.body {
-   position: relative;
-
+.presentation p, .presentation a{
+  animation: fade-in 1s ease-in-out;
 }
-
-.container.flex {
-   scroll-snap-type: x mandatory;
-   scroll-behavior: smooth;
-}
-
-.card-btn {
-   padding-top: 20px;
-}
-
-.card-btn .btn {
-   color: black;
-   border-color: black;
-}
-
-.next-btn {
-   position: absolute;
-   top: 90%;
-   left: 77%;
-   transform: translate(-50%, -50%);
-}
-
-.next-btn img {
-   width: 90px;
-}
-
-.presentation.body {
-   height: 100vh;
-}
-.presentation.body .card {
-   box-shadow: black;
-   height: 60vh;  /*-------------------------------------*/
-   width: 55vh;
-}
-
-.first-card .card{
-   margin-left: 1950px;
-}
-
-.presentation.body {
-   font-family: Arial, Helvetica, sans-serif;
-   font-weight: normal;
-   padding-bottom: 200px;
-}
-
-
-.presentation.body .flex a {
-   color: rgba(0,0,0,0.4);
-}
-
-.presentation.body .card {
-   overflow: hidden;
-}
-
-.presentation.body .card .md a {
-   color: rgba(0,0,0,0.4);
-}
-
-.img {
-   width: 400px;
-}
-
-.bionics {
-   width: 500px;
-}
-
-.card img {
-   width: 450px;
-}
-
-#ferro {
-   width: 200px;
-}
-
-/*------------------------------*/
-
-
-.languages {
-   position: relative;
-   height: 100vh;   
-}
-
-.languages .card {
-   position: absolute;
-}
-
-.languages .card:nth-child(1){
-   left: 45%;
-   top: 20%;
-   transform: translateX(-50%);
-   transform: translateY(-50%);
-   transform: rotate(-45deg);
-}
-
-.languages .card:nth-child(2){
-   left: 50%;
-   top: 7%;
-   transform: translateX(-50%);
-   transform: translateY(-50%);
-   transform: rotate(-35deg);
-}
-
-.languages .card:nth-child(3){
-   left: 60%;
-   top: 10%;
-   transform: translateX(-50%);
-   transform: translateY(-50%);
-}
-
-.languages .card:nth-child(4){
-   left: 70%;
-   top: 7%;
-   transform: translateX(-50%);
-   transform: translateY(-50%);
-   transform: rotate(35deg);
-}
-
-.languages .card:nth-child(5){
-   left: 75%;
-   top: 20%;
-   transform: translateX(-50%);
-   transform: translateY(-50%);
-   transform: rotate(45deg);
-}
-
-.computer {
-   width: 25%;
-   position: absolute;
-   left: 50%;
-   top: 50%;
-   transform: translateX(-50%);
-   transform: translateY(-50%);
-}
-
-.programming {
-   padding-left: 200px;
-}
-.languages .card img {
-   width: 100px;
-}
-
-.programming .btn {
-   color: black;
-   border-color: black;
-}
-
-
-.introduction {
-   height: 100vh;
-}
-
-/*------------------------------*/
-
-
-.text-to-view {
-   font-family: Arial, Helvetica, sans-serif;
-   background-color: #fff;
-   color: #333;
-   border-radius: 10px;
-   box-shadow: 0 30px 30px rgba(0, 0, 0, 0.7);
-   padding: 20px;
-   margin: 10px;
-}
-
-.text-to-view .md a,
-.text-to-view .xl a{
-   color: rgba(0,0,0,0.4);
-}
-
-
-.carousel-inner {
-   height: 90vh;
-}
-
-.carousel-img {
-   background-color: black;
-   width: 100%;
-}
-
-
-/*------------------------------*/
-
-
-.about-me {
-   color: black;
-}
-
-.about-me a {
-   color: rgba(0,0,0,0.4);
-}
-
-.about-me img {
-   box-shadow: 0 30px 30px rgba(0, 0, 0, 0.7);
-   width: 100%;
-   border-radius: 20%;
-}
-
 
 .presentation.projects .card {
-   height: 60vh;
-   width: 60vh;
-   box-shadow: black;  /*-------------------------------------*/
+  height: 60vh;
+  width: 60vh;
+  box-shadow: black;  
 }
 
 .presentation.projects {
-   font-family: Arial, Helvetica, sans-serif;
-   font-weight: normal;
-   padding-bottom: 200px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  padding-bottom: 200px;
 }
 
-
 .presentation.projects .flex a {
-   color: rgba(0,0,0,0.4);
+  color: rgba(0,0,0,0.4);
 }
 
 .presentation.projects .container{
-   overflow: visible;
+  overflow: visible;
 }
 
 .presentation.projects .card {
-   overflow: hidden;
+  overflow: hidden;
 }
 
 .projects .card {
-   overflow: hidden;  /*-------------------------------------*/
+  overflow: hidden; 
 } 
 
 .presentation.projects .card .md a {
-   color: rgba(0,0,0,0.4);
+  color: rgba(0,0,0,0.4);
 }
 
-
-.presentation.projects .card {
-   animation: fade-in 5s ease-in-out;
+.card-btn {
+  padding-top: 20px;
 }
 
-
-/*---------------------
-
-.contact-me {
-   display: flex;
-
-}
--------------------*/
-
-.contact-me {
-   width: 50vw;
-   height: 40vh;
-}
-
-.thankyou {
-   height: 100vh;
-   position: relative;
-}
-
-.thankyou .container {
-   position: absolute;
-   left: 25%;
-   top: 50%;
-   transform: translateX(-50%);
-   transform: translateY(-50%);
-}
-
-.mobile {
-   display: none;
-}
-
-@keyframes fade-in{
-   from{
-   opacity: 0;
-   }
-   to{
-   opacity: 0.8;
-   }
-   }
-
-@media (max-width:620px) {
-   
-   .card img {
-      display: none;
-   }
-
-   .presentation.body {
-      height: 150vh;
-   }
-
-   .last-card {
-      padding-right: 200px;
-   }
-
-   .computer {
-      margin-top: 100px;
-   }
-
-   .languages {
-      display: flex;
-      flex-direction: column;
-   }
-
-   .languages .btn {
-      margin-top: 20px;
-   }
-
-   .languages .card {
-      display: none;
-   }
-
-   .programming h2 a {
-      color: gray;
-   }
-
-   .languages {
-      margin: 150px 0 160px 0;
-      height: 140vh;
-   }
-
-   .mobile {
-      display: contents;
-   }
-
-   .about-me-img {
-      display: none;
-   }
-
-   .projects-mobile-title {
-      text-align: center;
-   }
-
-   .project-mobile-title a {
-      color: gray;
-   }
-
-   .projects-grid {
-      display: flex;
-      flex-direction: column;
-   }
-
+.card-btn .btn {
+  color: black;
+  border-color: black;
 }

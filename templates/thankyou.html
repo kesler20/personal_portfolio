@@ -1,19 +1,21 @@
-{% extends 'base.html' %}
-{% block title %}Thank You{% endblock %}
-{% block content %}
-<section class="showcase head thankyou bg-primary py-3">
-    <div>
-        <div class="container grid">
-            <div>
-                <h3 class="md">I just Wanted to say</h3> 
-                <h1 class="xl">Thank You For Getting In Touch</h1>
-                <h3 class="md">I will get back to you as soon as possible</h3>
-            </div>
-            <div>
-                <p>please check that the following email correspond to yours otherwise try to send message again</p>
-                <p>{{user}}</p>
-            </div>
-        </div>
+{% extends 'base.html' %} {% block title %}Thank You{% endblock %} {% block
+content %}
+<section class="hero head thankyou bg-primary py-3">
+  <div>
+    <div class="container grid">
+      <div>
+        <h3 class="md">I just Wanted to say</h3>
+        <h1 class="xl">Thank You For Getting In Touch</h1>
+        <h3 class="md">I will get back to you as soon as possible</h3>
+      </div>
+      <div>
+        <p>
+          please check that the following email correspond to yours otherwise
+          try to send message again
+        </p>
+        <p>{{user}}</p>
+      </div>
     </div>
+  </div>
 </section>
 {% endblock %}

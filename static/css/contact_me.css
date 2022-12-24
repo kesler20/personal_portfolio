@@ -1,0 +1,20 @@
+
+.contact-me {
+  height: 100vh;
+}
+
+.text-to-view {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #fff;
+  color: #333;
+  border-radius: 10px;
+  box-shadow: 0 30px 30px rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  margin: 10px;
+}
+
+.text-to-view .md a,
+.text-to-view .xl a {
+  color: rgba(0, 0, 0, 0.4);
+}
+  
