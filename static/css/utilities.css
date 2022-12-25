@@ -244,3 +244,13 @@
 .hide {
     display: none;
 }
+
+.flip-right {
+    animation: flip 1s ease-in-out;
+    transform: rotate(180deg);
+}
+
+.flip-left {
+    animation: reverse-flip 1s ease-in;
+    transform: rotate(0deg);
+}
