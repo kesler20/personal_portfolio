@@ -16,7 +16,6 @@ def home():
 
 @app.route('/<page>/', methods=['POST', 'GET'])
 def show(page):
-
     if page == "errors":
         error_logger = ErrorLogger()
         errors = error_logger.get_all_errors()
