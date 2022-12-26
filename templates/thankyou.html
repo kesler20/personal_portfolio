@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block title %}Home Page{% endblock %}
+{% block content %}
+<section class="hero head bg-primary py-3">
+    <div class="bg-img" style="
+        background-image: url('../static/img/Round-Sphere-Moving.gif'); 
+        background-repeat: no-repeat; 
+        background-attachment: fixed;
+        background-position-x: 70%; 
+        background-position-y: center; 
+        background-size: 70%;
+        ">
+        <div class="container grid">
+            <div>
+                <h3 class="md">Thank You</h3> <!--remove text align center-->
+                <h1 class="xl">For Getting in Touch</h1>
+                <p>I will process your request ASAP!</p>
+                <p>In the meantime you can go through my projects</p>
+                <a href="{{ url_for('static', filename='../projects') }}" class="btn btn-outline">My Projects</a>
+            </div>
+            <div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

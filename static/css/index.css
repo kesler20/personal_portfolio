@@ -66,7 +66,7 @@
 .projects-cards.container {
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
-  overflow: visible                                        ;
+  overflow: visible;
   padding-right: 50px;
 }
 
@@ -190,6 +190,7 @@
 .languages .card:nth-child(4) {
   left: 70%;
   top: 7%;
+  height: 180px;
   transform: translateX(-50%);
   transform: translateY(-20%);
   transform: rotate(35deg);
@@ -228,7 +229,6 @@
   color: black;
   border-color: black;
 }
-
 
 /*--------------------- ABOUT ME SECTION --------------------------*/
 
@@ -315,7 +315,20 @@
     justify-self: center;
     margin: auto;
   }
-  
+
+  .languages .container.flex {
+    display: none;
+  }
+   
+  .computer {
+    display: none;
+  }
+
+  .mobile {
+    display: flex;
+    margin-bottom: 30px;
+  }
+
   .request-collaboration-form.card {
     height: 360px;
   }
