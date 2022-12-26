@@ -299,7 +299,7 @@
   }
 
   .my-main-projects {
-    height: auto;
+    height: 95vh;
   }
 
   .my-main-projects.body .card {
