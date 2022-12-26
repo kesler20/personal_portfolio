@@ -56,7 +56,7 @@ def show(page):
         else:
             # if the get request is called as the user refreshes the page
             # redirect the user to the home page
-            return redirect(url_for("/index"))
+            return redirect(url_for("home"))
 
     return render_template(f'{page}.html')
 
