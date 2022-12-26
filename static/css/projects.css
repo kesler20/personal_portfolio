@@ -42,8 +42,8 @@
 }
 
 .presentation.projects .card {
-  height: 60vh;
-  width: 60vh;
+  height: 450px;
+  width: 450px;
   box-shadow: black;  
 }
 
@@ -89,6 +89,11 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+  }
+
+  .presentation.projects .card {
+    height: 330px;
+    width: 300px;
   }
   .presentation .projects-title {
     padding-left: 25px;

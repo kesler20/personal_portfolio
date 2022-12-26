@@ -87,7 +87,7 @@ nav {
 /* ------------------------------------------------------FOOTER ------------------------*/
 
 .footer .social a {
-  margin: 0 10px;
+  margin: 0 20px;
 }
 
 .fa-github:hover {
@@ -293,5 +293,13 @@ nav {
 @media (max-width: 720px) {
   .cli .grid {
     display: none;
+  }
+
+  .footer .social {
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
   }
 }
