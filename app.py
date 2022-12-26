@@ -1,10 +1,13 @@
 import smtplib
-from config import email_username, email_password
+import os
 import yagmail
 import smtplib
 from flask import redirect, url_for, render_template, request
 from data_models import app, ErrorLogger
+from dotenv import load_dotenv
 
+# Load environment variables from the .env file
+load_dotenv()
 
 @app.route('/')
 def home():
@@ -36,7 +39,7 @@ def show(page):
         # sen the form data via email
         if request.method == "POST":
             # Set the login credentials and email server
-            yag = yagmail.SMTP(email_username, email_password)
+            yag = yagmail.SMTP(os.getenv('email_username'), os.getenv('email_password'))
             try:
                 yag.login()
 
