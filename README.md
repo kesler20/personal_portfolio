@@ -1,5 +1,7 @@
 # Overview
 
+the website is published here https://personalportfolio-production-a17a.up.railway.app
+
 the static folder contain all the static assets
 the css folder contains:
 - style.css : used for the general style of the entire website 
