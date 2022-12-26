@@ -322,7 +322,7 @@
   }
 
   .languages {
-    height: 75vh;
+    height: 70vh;
   }
 
   .languages .container.flex {
@@ -347,7 +347,7 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    height: 170vh;
+    height: 150vh;
     overflow: hidden;
   }
 
