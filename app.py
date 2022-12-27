@@ -29,7 +29,6 @@ def show(page):
         #     ('name', 'kesler isoko'),
         #     ('company', 'student'),
         #     ('msg', 'ththththt'),
-        #     ('email', 'kisoko1@sheffield.ac.uk')
         # ])
         # the Immutable dict object can be accessed from the request.form
         # as such "request.form['name']" -> 'kesler isoko'
@@ -43,7 +42,7 @@ def show(page):
                 yag.login()
 
                 # Set the recipient and email content
-                to = request.form['email']
+                to = os.getenv('email_username')
                 subject = f"Message by {request.form['name']} from {request.form['company']}"
                 body = request.form['msg']
 
