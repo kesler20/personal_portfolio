@@ -3,7 +3,7 @@ const projectsCards = Array.from(
 );
 
 // if mobile view hide the other two starting cards
-if (window.innerWidth <= 360) {
+if (window.innerWidth <= 560) {
   projectsCards[1].classList.add("hide");
   projectsCards[2].classList.add("hide");
 }
