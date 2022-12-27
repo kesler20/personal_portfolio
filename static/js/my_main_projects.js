@@ -17,7 +17,7 @@ let currentCardInView = 0;
 
 nextButton.addEventListener("click", () => {
   // if the view is mobile change one card at a time
-  if (window.innerWidth <= 360) {
+  if (window.innerWidth <= 560) {
     currentCardInView++;
     if (currentCardInView != 0) {
       projectsCards[currentCardInView - 1].classList.add("hide");
