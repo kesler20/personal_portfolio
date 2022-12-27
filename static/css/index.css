@@ -218,6 +218,10 @@
   display: none;
 }
 
+.desktop-view {
+  color: rgb(88, 88, 88);
+}
+
 .programming .btn {
   color: black;
   border-color: black;
@@ -289,6 +293,10 @@
     padding-right: 0px;
     padding-left: 36px;
     justify-content: start;
+  }
+
+  .desktop-view {
+    display: none;
   }
 
   .next-btn {
