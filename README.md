@@ -23,6 +23,7 @@ in particular for the base.html template
 - [ ] add more custom animations with scroll on view and active states
 - [ ] deploy on IONOS
 - [ ] find a better way to index and retrieve specific errors
+- [ ] change the icon of the website to the isoko.ltd logo
 
 The new projects include:
 iGEM bioreactor
