@@ -28,7 +28,6 @@ The new projects include:
 iGEM bioreactor
 iGEM toolbox
 polished isokoin
-drawUML
 sofia
 sofia-diet
 jaguar
