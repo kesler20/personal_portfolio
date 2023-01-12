@@ -19,11 +19,27 @@
     <!-- -------------------------------------------------------->
     <title>My Projects</title>
   </head> 
+  <style>
+    .container {
+      display: flex; 
+      align-items: center; 
+      justify-content: flex-start; 
+      flex-direction: column; 
+      padding: 100px;
+      line-height: 2rem;
+    }
+    .container a { text-decoration: none;
+      outline: none;
+      color: white;
+      outline-style: none; 
+      border-bottom:1px solid red; }
+
+  </style>
   <body>
 
     <!-- Navbar -->
-    <div class="navbar">
-      <div class="container flex">
+    <div class="navbar bg-dark ">
+      <div class="container flex ">
           <div></div>
           <nav>
               <ul>
@@ -48,7 +64,10 @@
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img class='carousel-img' src="{{ url_for('static', filename='img/IMG_3472.JPG') }}" class="d-block w-100" alt="...">
+            <img class='carousel-img' src="{{ url_for('static', filename='img/IMG_3634.JPG') }}" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img class='carousel-img' src="{{ url_for('static', filename='img/IMG_3632.JPG') }}" class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item">
             <img class='carousel-img' src="{{ url_for('static', filename='img/IMG_3492.JPG') }}" class="d-block w-100" alt="...">
@@ -65,9 +84,6 @@
           <div class="carousel-item">
             <img class='carousel-img' src="{{ url_for('static', filename='img/IMG_3577.JPG') }}" class="d-block w-100" alt="...">
           </div>
-          <div class="carousel-item">
-            <img class='carousel-img' src="{{ url_for('static', filename='img/IMG_3632.JPG') }}" class="d-block w-100" alt="...">
-          </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -79,14 +95,12 @@
         </button>
     </div>
     
-    <section class="presentation body bg-primary">
-      <div class="container flex">
+    <section class="presentation body bg-dark">
+      <div class="container">
+        <h1>Biodigester Hackathon</h1>
         <div>
-          <h1>Biodigester Hackathon</h1>
           <p>For an Hackathon organised by <a href='https://greenimpact.nus.org.uk'>The Green Impact</a> we had to design a biodigester 
             that would use the organic waste of the Diamond building at the University of Sheffield to produce methane</p>
-        </div>
-        <div>
           <p>Our team to integrated an Air flow mixing technique that would maximise mass transfer between methanogenic bacteria and the waste</p>
           <p>The technology was researched by a pHD student</p>
           <img src="{{ url_for('static', filename='img/airlift_mixing.png') }}" alt="" srcset="">
@@ -95,7 +109,7 @@
     </section>
 
     <!-- Footer-->
-    <footer class="footer bg-primary py-5">
+    <footer class="footer bg-dark py-5">
       <div class="container grid grid-3">
         <div>
           <p>Created by: Kesler Isoko</p>
