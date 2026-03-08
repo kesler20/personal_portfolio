@@ -80,24 +80,25 @@ class GmailServer:
     # Set the email server and credentials
     email_password: str
     email_username: str
-    __server = smtplib.SMTP('smtp.gmail.com', 587)
+    _server: smtplib.SMTP = None
 
     def set_server(self, server: smtplib.SMTP):
-        self.__server = server
+        self._server = server
 
     @property
     def server(self) -> smtplib.SMTP:
-        return self.__server
+        return self._server
 
     def __enter__(self):
         # set the login and credentials
-        self.server.starttls()
-        self.server.login(self.email_username, self.email_password)
+        self._server = smtplib.SMTP('smtp.gmail.com', 587)
+        self._server.starttls()
+        self._server.login(self.email_username, self.email_password)
         return self
 
     def __exit__(self) -> None:
         # Close the server connection
-        self.server.quit()
+        self._server.quit()
 
     def __build_mail(self, to: str, subject: Optional[str]) -> Tuple[str]:
         # Set the email headers
