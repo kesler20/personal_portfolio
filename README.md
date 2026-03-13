@@ -10,31 +10,6 @@ in particular for the base.html template
 - (page_name).css @ each page has its own css file
 
 
-## TODO
-
-- [ ] rename all the css files to the corresponding pages
-- [ ] remove all the dead code
-- [ ] make the contact section functional
-- [ ] make the resizing of the content more professional
-- [ ] fix the content of each page
-- [ ] update all the projects with the new ones
-- [ ] polish the website of the other projects
-- [ ] make sure that each link works
-- [ ] add more custom animations with scroll on view and active states
-- [ ] deploy on IONOS
-- [ ] find a better way to index and retrieve specific errors
-- [ ] change the icon of the website to the isoko.ltd logo
-
-The new projects include:
-iGEM bioreactor
-iGEM toolbox
-polished isokoin
-sofia
-sofia-diet
-jaguar
-protocol-backend (system automation)
-lab
-
 >to check for the errors querry the route
 
 ``/errors`` 
