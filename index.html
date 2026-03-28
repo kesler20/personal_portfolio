@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="static/css/animations.css" />
+    <link rel="stylesheet" href="static/css/contact_me.css" />
+    <link rel="stylesheet" href="static/css/index.css" />
+    <link rel="stylesheet" href="static/css/machine_learning.css" />
+    <link rel="stylesheet" href="static/css/projects.css" />
+    <link rel="stylesheet" href="static/css/style.css" />
+    <link rel="stylesheet" href="static/css/utilities.css" />
+    <link rel="stylesheet" href="static/css/workflow.css" />
+    <!-- Font Awesome link tag copied from cdjs.com -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Home Page</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <div class="hamburger">
+        <div class="top line"></div>
+        <div class="midll line"></div>
+        <div class="bottm line"></div>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#engineering-philosophy">My Manifesto</a></li>
+        <li><a href="projects.html">Passion Projects</a></li>
+      </ul>
+    </nav>
+
+    <section class="hero head bg-primary py-3">
+      <div class="bg-img" style="
+          background-image: url('static/img/Round-Sphere-Moving.gif');
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-position-x: 70%;
+          background-position-y: center;
+          background-size: 70%;
+          ">
+        <div class="container grid">
+          <div>
+            <h3 class="md">Hello My Name Is</h3>
+            <h1 class="xl">Kesler Isoko</h1>
+            <p>A PhD student with a passion for building things.
+            Welcome to my personal portfolio where you can learn more about who I am
+            and the work that I do</p>
+            <a href="https://github.com/kesler20" class="btn btn-outline" target="_blank" rel="noopener noreferrer">My Repository</a>
+          </div>
+          <div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="my-main-projects body bg-light py-3">
+      <div class="projects-title xl">My Main<a> Projects.</a></div>
+      <div class="container flex projects-cards">
+        <div>
+          <div class="card" id="card-0">
+            <p>General Life Planner</p>
+            <p class="md">Sofia <a>Planner</a></p>
+            <p>Manage my inbox/budget/diet via voice &amp; claude</p>
+            <div class="card-btn">
+              <a href="https://sofiaui-production.up.railway.app" class="btn btn-outline in-card">Read More</a>
+            </div>
+            <img src="static/img/sofia-planner.png" alt="sofia picture" srcset="">
+          </div>
+        </div>
+        <div>
+          <div class="card" id="card-1">
+            <p>Programming a code generation tool from ORM specs</p>
+            <p class="md">dev<a>OS</a></p>
+            <p>Automated tool to generate classes, endpoints and tests</p>
+            <div class="card-btn">
+              <a href="https://github.com/kesler20/_devOS" class="btn btn-outline in-card">Read More</a>
+            </div>
+            <img src="static/img/draw_uml.svg" alt="devOS picture" srcset="">
+          </div>
+        </div>
+        <div>
+          <div class="card" id="card-2">
+            <p>Predictive Control Dashboard</p>
+            <p class="md">Automation <a>Dashboard</a></p>
+            <p>A cool visual showing predictive control when changing target</p>
+            <div class="card-btn">
+              <a href="https://kesler20.github.io/predictive_control_dashboard" class="btn btn-outline in-card">Read More</a>
+            </div>
+            <img class="bionics" src="static/img/bionics.jpg" alt="random pic" srcset="">
+          </div>
+        </div>
+        <div class="hide">
+          <div class="card" id="card-3">
+            <p>Making my own cryptocurrency</p>
+            <p class="md">Iso<a>Koin</a></p>
+            <p>made my own cryptocurrency running within its own blockchiain</p>
+            <div class="card-btn">
+              <a href="https://isokoin-production.up.railway.app" class="btn btn-outline in-card">Read More</a>
+            </div>
+            <img class="img" src="static/img/Logo.png" alt="random pic" srcset="">
+          </div>
+        </div>
+        <div class="hide">
+          <div class="card" id="card-4">
+            <p>Designing an electric generator</p>
+            <p class="md">Piezoelectric <a>Generator</a></p>
+            <p>conducted testing on and modelled a piezoelectric generator</p>
+            <div class="card-btn">
+              <a href="piezoelectric_generator.html" class="btn btn-outline in-card">Read More</a>
+            </div>
+            <img src="static/img/stirling.gif" alt="random pic" srcset="">
+          </div>
+        </div>
+        <div class="hide">
+          <div class="card" id="card-5">
+            <p>coding a quantitative trading bot</p>
+            <p class="md">Quant Trading <a>Bot</a></p>
+            <p>coded a trading bot that places trades using quant strategies</p>
+            <div class="card-btn">
+              <a href="https://github.com/kesler20/trading_bot" class="btn btn-outline in-card">Read More</a>
+            </div>
+            <img src="static/img/tradingbot.jpg" alt="random pic" srcset="">
+          </div>
+        </div>
+        <div class="next-btn">
+          <i class="fa fa-arrow-right"></i>
+        </div>
+      </div>
+    </section>
+
+<section class="request-collaborate bg-primary" style="
+    background-image: url('../static/img/black-background.gif'); 
+    background-repeat: no-repeat; 
+    background-position-x: 70%; 
+    background-attachment: fixed;
+    background-position-y: center; 
+    background-size: 70%;
+    ">
+    <div class="container grid">
+        
+        <div class="request-collaborate-text">
+          <h1>Do you want to collaborate?</h1>
+            <h2>👾 Hi there</h2>
+            <p>I'm a PhD Researcher working on autonomous systems, combining machine learning, optimisation, and software engineering to close the loop between data and outcomes.</p>
+            <p>If you want to work on new exciting projects and you are looking for someone with a technical background don't hesitate.</p>
+            I am always open for a chat so feel free to 👉 <a href="https://www.linkedin.com/in/kesler-isoko-6730381a7/" target="_blank" rel="noopener noreferrer"><img src="https://img.shields.io/badge/Connect%20on%20LinkedIn-0077B5?logo=linkedin&logoColor=white" alt="Connect on LinkedIn"></a></p>
+            <p>Otherwise send me a message by filling the form on the right.</p>
+            <a href="mailto:uchekesla@gmail.com" class="btn btn-outline">Email Me</a>
+        </div>
+      </div>
+ 
+</section>
+
+    <section class="languages">
+      <div class="programming">
+        <h2 class="md my-2">
+          Programming <a>Languages</a>.
+        </h2>
+        <p>Languages I am productive with</p>
+        <div class="mobile">
+          <ul>
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>SQL</li>
+            <li>Typescript</li>
+          </ul>
+        </div>
+        <a href="https://github.com/kesler20" class="btn btn-outline">My GitHub</a>
+      </div>
+      <div class="container flex">
+        <div class="card">
+          <h4>JavaScript</h4>
+          <img src="static/img/js.png" alt="">
+        </div>
+        <div class="card">
+          <h4>Python</h4>
+          <img src="static/img/python.png" alt="">
+        </div>
+        <div class="card">
+          <h4>SQL</h4>
+          <img src="static/img/OIP.jfif" alt="">
+        </div>
+        <div class="card">
+          <h4>Typescript</h4>
+          <img src="static/img/typescript.png" alt="">
+        </div>
+      </div>
+      <img class="computer" src="static/img/computer.png" alt="">
+    </section>
+
+    <section id="engineering-philosophy" class="engineering-philosophy bg-primary py-5">
+      <div class="container">
+        <h1 class="md my-2">My Engineering <a>Philosophy.</a></h1>
+        <p>The core idea behind engineering is to think in systems.</p>
+        <p>I believe in always striving to follow a systematic approach. Without building a system, you cannot reliably expect to improve your outcomes. The answer is not to lower ambition, but to build stronger systems: personal systems, organisational systems, technical systems, and decision systems.</p>
+        <p>I believe in Bayesian thinking. We should always strive to formulate a hypothesis, especially under uncertainty. Being explicit about our beliefs is difficult, and it often uncovers a lack of understanding. We should strive to find structure: the main effects, the higher-order effects, the interaction effects, and the causal relationships within our system. We should think carefully about how each component contributes to the overall behaviour, and how to steer the ship towards desired outcomes.</p>
+        <p>Technology can be used to eliminate human error and do better engineering. Computers afford us automation. Automation is abstraction, and abstraction is automation. This is a powerful tool: it can amplify poor systems and create clutter, or it can create infrastructure and leverage that enable more complex execution. That is why engineering is also about problem decomposition. We must find the right design through iteration and connect components to balance orchestration and encapsulation.</p>
+        <p>Software is more complex than many other things. As such, the best way to design software is to write software. Write code twice: the first time to learn the shape of the solution, and the second time for maintainability. The architecture of a system is a living artifact. It must continuously balance objectives, sources of uncertainty, constraints, and moving parts, and it should evolve atomically and iteratively.</p>
+        <p>To me, digital transformation is not a tool rollout. It is a maturity journey. It begins with culture: standardising how work is done and how decisions are made. Then come production systems that digitise those processes reliably. Once those systems exist, they generate data that can inform better decisions. Workflow automation can then remove friction and increase throughput. Only on top of those foundations does it make sense to build intelligent systems, autonomous control, or agents. Agents without structure is chaos.</p>
+        <p>A data-driven culture is an operating system, not a dashboard. It is a scientific mindset embedded into decision-making under uncertainty: Metrics → KPIs → OKRs → Experimentation → Institutional Memory. Experimentation should not happen in isolation, but within the context of strategy and historical learning so that we can map out the design space and navigate it effectively. Historical data and prior experiments should become institutional memory: what has worked, what has failed, where the trade-offs lie, and which regions are robust under competing objectives. Good engineering turns that memory into a repeatable decision factory that continuously converts data, uncertainty, and feedback into better actions over time.</p>
+        <p>Ultimately, theory and best practices do not matter unless they make contact with reality. Engineering is practised in the arena, not on the whiteboard. It should be done in service of the business, progressing iteratively, integrating stakeholder feedback, and fixing problems at the source rather than patching outputs.</p>
+      </div>
+    </section>
+
+    <section class="hero bg-light">
+      <div class="container about-me grid">
+        <div class="hero-text">
+          <h1 class="xl">About <a>Me.</a></h1>
+          <p>I love ML and Software <a class="desktop-view">Aside that I also have a passion for:</a>
+            <ul>
+              <li>Debating</li>
+              <li>Psychology (cognitive biases)</li>
+              <li>Futsal</li>
+              <li>Automation</li>
+              <li>Gym</li>
+              <li>Philosophy (logic / epistemology)</li>
+            </ul>
+            <a class="desktop-view">
+              Favorite books: Thinking Fast and Slow and Gödel, Escher, Bach
+            </a>
+          </p>
+        </div>
+        <div class="about-me-img">
+          <img src="static/img/my-pic.jpeg" alt="image of myself" srcset="">
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-primary py-5">
+      <div class="container grid grid-3">
+        <div>
+          <p>Created by: Kesler Isoko</p>
+          <p>Copyright &copy; 2023</p>
+        </div>
+        <div></div>
+        <div class="social">
+          <a href="https://github.com/kesler20"><i class="fab fa-github fa-2x"></i></a>
+          <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+          <a href="https://uk.linkedin.com/in/kesler-isoko-6730381a7"><i class="fab fa-linkedin fa-2x"></i></a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- scripts -->
+    <script src="static/js/nav_animation.js"></script>
+    <script src="static/js/my_main_projects.js"></script>
+  </body>
+</html>

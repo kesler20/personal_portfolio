@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="static/css/animations.css" />
+    <link rel="stylesheet" href="static/css/contact_me.css" />
+    <link rel="stylesheet" href="static/css/index.css" />
+    <link rel="stylesheet" href="static/css/machine_learning.css" />
+    <link rel="stylesheet" href="static/css/projects.css" />
+    <link rel="stylesheet" href="static/css/style.css" />
+    <link rel="stylesheet" href="static/css/utilities.css" />
+    <link rel="stylesheet" href="static/css/workflow.css" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Engineers Without Borders</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <div class="hamburger">
+        <div class="top line"></div>
+        <div class="midll line"></div>
+        <div class="bottm line"></div>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#engineering-philosophy">My Manifesto</a></li>
+        <li><a href="projects.html">Passion Projects</a></li>
+      </ul>
+    </nav>
+
+    <section class="hero head bg-primary py-3" style="
+        background-image: url('static/img/wind.jpg');
+        background-repeat: no-repeat;
+        background-position-x: 100%;
+        background-attachment: fixed;
+        background-position-y: center;
+        background-size: 100%;
+        ">
+      <div class="bg-img">
+        <div class="container grid">
+          <div style="color: black">
+            <h3 class="md">Wind Turbine</h3>
+            <h1 class="xl">Technical Design and Modelling</h1>
+          </div>
+          <div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="presentation fionn head">
+      <div class="container flex">
+        <div>
+          <img class="fionn-img" src="static/img/ewb.jpg" alt="" srcset="">
+        </div>
+        <div class="flex-text">
+          <h3 class="md">Context</h3>
+          <p>
+            During my second year of university, I joined the engineers without borders electrical team to work on a project involving designing and manufacturing a wind turbine from scratch. This required modelling not only the turbine but also the manufacturing tools that we would use to ensure
+            that the entire team would understand the manufacturing process.
+            For this project I mainly worked on the modelling using Fusion 360.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="presentation fionn body">
+      <div class="container">
+        <p>The Following Images show the Fusion 360 models that I made for the coil winder</p>
+        <div class="container flex">
+          <div>
+            <img class="fionn-img" src="static/fusion_360_portfolio/coil_winder1.png" alt="" srcset="">
+          </div>
+          <div>
+            <img class="fionn-img" src="static/fusion_360_portfolio/coil_winder2.png" alt="" srcset="">
+          </div>
+          <div>
+            <img class="fionn-img" src="static/fusion_360_portfolio/coil_winder3.png" alt="" srcset="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="presentation fionn body">
+      <div class="container">
+        <div>
+          <h3 class="md">Stator Mould and Alterantor</h3>
+          <p>The stator mould was designed in order to be 3D printed or to have an idea of what is required when manufacturing would have started.
+            Nevertheless, many of the parts of the design where made following <a href="static/Hugh Piggott Axial-flow PMG wind turbine May 2003.pdf">this document</a> that provided a robust technical basis to our design
+            and guidance thereby enabling correct sizing, geometry and a clear end product that the entire team worked on.
+          </p>
+        </div>
+        <div class="container flex">
+          <div>
+            <img class="fionn-img" src="static/fusion_360_portfolio/stator_mould.png" alt="" srcset="">
+          </div>
+          <div>
+            <img class="fionn-img" src="static/fusion_360_portfolio/alternator.png" alt="" srcset="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="presentation fionn body">
+      <div class="container flex">
+        <div class="flex-text">
+          <p>
+            <h3 class="md">Functional Design</h3>
+            The design of the various parts was made with two main goals in mind:</p>
+            <p>
+            <ul>
+              <li>to provide clarity (aestatically adequate)</li>
+              <li>to model mechanical parts that could be 3D printed</li>
+            </ul>
+            </p>
+          <p>
+            As such the design wasn't only made to replicate what the actual parts would look like in reality,
+            but also to embed some of their functionality from the design itself, by i.e. making sure moving parts had the
+            right degrees of freedom and that the proportionality of each component was numerically accurate so that the centre of
+            mass of the parts would be the same as the one of the real parts.
+          </p>
+        </div>
+        <div>
+          <img class="fionn-img" src="static/fusion_360_portfolio/coil_winder4.png" alt="" srcset="">
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-primary py-5">
+      <div class="container grid grid-3">
+        <div>
+          <p>Created by: Kesler Isoko</p>
+          <p>Copyright &copy; 2023</p>
+        </div>
+        <div></div>
+        <div class="social">
+          <a href="https://github.com/kesler20"><i class="fab fa-github fa-2x"></i></a>
+          <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+          <a href="https://uk.linkedin.com/in/kesler-isoko-6730381a7"><i class="fab fa-linkedin fa-2x"></i></a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- scripts -->
+    <script src="static/js/nav_animation.js"></script>
+    <script src="static/js/my_main_projects.js"></script>
+  </body>
+</html>
