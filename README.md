@@ -1,6 +1,6 @@
 # Overview
 
-the website is published here https://personalportfolio-production-a17a.up.railway.app
+published at http://keslerisoko.com or https://kesler20.github.io/personal_portfolio/
 
 the static folder contain all the static assets
 the css folder contains:
